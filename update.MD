@@ -1,0 +1,1 @@
+- Phiên bản đầu tiên: điều khiển toàn bộ app bằng tay cầm, giao diện header thống nhất, tự động cập nhật.
