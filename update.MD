@@ -1,1 +1,5 @@
-- Phiên bản đầu tiên: điều khiển toàn bộ app bằng tay cầm, giao diện header thống nhất, tự động cập nhật.
+- Steam Chat: ở chế độ "Luôn hiển thị" khung chat cố định trên một màn hình (mặc định màn hình chính), kéo thả để đổi chỗ và tự nhớ vị trí
+- Steam Chat: hiển thị ảnh, emoji và sticker (có hoạt ảnh), gõ /sticker <tên> để gửi sticker
+- Steam Chat: thêm lịch sử chat, cuộn lên để tải tin cũ hơn, lăn chuột trên ô nhập để cuộn
+- Sửa lỗi nháy popup nhỏ khi chuyển tab
+- Sửa lỗi treo app khi nhiều ảnh chat được giải mã cùng lúc
