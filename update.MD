@@ -1,2 +1,3 @@
 - Bàn phím ảo cho tay cầm: thêm nút Enter nổi bật, bấm RT/R2 để gửi tin nhắn; nút ⌨▾ nhỏ để tắt bàn phím (START: Tắt, B: Huỷ)
 - Sửa lỗi báo "Failed to load Python DLL" sau khi app tự cập nhật và khởi động lại
+- Steam chat overlay: hiện đúng hình sticker có tên chứa dấu cách (vd. "Your Face") thay vì chữ (sticker)
