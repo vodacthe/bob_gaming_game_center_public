@@ -1,3 +1,4 @@
-- Bàn phím ảo cho tay cầm: thêm nút Enter nổi bật, bấm RT/R2 để gửi tin nhắn; nút ⌨▾ nhỏ để tắt bàn phím (START: Tắt, B: Huỷ)
-- Sửa lỗi báo "Failed to load Python DLL" sau khi app tự cập nhật và khởi động lại
-- Steam chat overlay: hiện đúng hình sticker có tên chứa dấu cách (vd. "Your Face") thay vì chữ (sticker)
+- Steam chat overlay: gõ chat không còn làm game mất focus — không tụt fps, AFMF và AMD performance overlay vẫn chạy khi mở ô chat
+- Bộ gõ tiếng Việt có sẵn trong ô chat (Telex / VNI / tắt), chọn trong cài đặt Steam Chat Overlay; Unikey / EVKey không tác dụng trong ô chat
+- Ô chat tự đóng khi chuyển sang cửa sổ khác (Alt+Tab, click ra ngoài)
+- Hiện đúng hình sticker có tên chứa dấu cách (vd. "Your Face") thay vì chữ (sticker)
