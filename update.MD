@@ -1,4 +1,2 @@
-- Steam chat overlay: gõ chat không còn làm game mất focus — không tụt fps, AFMF và AMD performance overlay vẫn chạy khi mở ô chat
-- Bộ gõ tiếng Việt có sẵn trong ô chat (Telex / VNI / tắt), chọn trong cài đặt Steam Chat Overlay; Unikey / EVKey không tác dụng trong ô chat
-- Ô chat tự đóng khi chuyển sang cửa sổ khác (Alt+Tab, click ra ngoài)
-- Hiện đúng hình sticker có tên chứa dấu cách (vd. "Your Face") thay vì chữ (sticker)
+- Steam chat overlay: quay lại cách gõ chat như v1.0.2 (ô chat nhận focus) — sửa lỗi tay cầm không chọn được ô chat / không mở được bàn phím ảo; gõ tiếng Việt lại dùng Unikey / EVKey như bình thường
+- Bấm vào số phiên bản ở góc dưới thanh bên để kiểm tra cập nhật ngay
