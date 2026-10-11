@@ -1,2 +1,3 @@
-- Steam chat overlay: quay lại cách gõ chat như v1.0.2 (ô chat nhận focus) — sửa lỗi tay cầm không chọn được ô chat / không mở được bàn phím ảo; gõ tiếng Việt lại dùng Unikey / EVKey như bình thường
-- Bấm vào số phiên bản ở góc dưới thanh bên để kiểm tra cập nhật ngay
+- Steam chat overlay: tag thành viên — gõ @ để chọn người từ danh sách (↑/↓, Tab/Enter), người được tag nhận thông báo của Steam; @Tên hiện nổi bật, tin tag bạn có nền tím
+- Steam chat overlay: tự động copy code (code game, OTP, mã vào lobby) trong tin nhắn đến và báo "Đã copy code"; có thể tắt trong cài đặt
+- Bàn phím ảo: gõ được tiếng Việt (Telex / VNI, đổi qua biểu tượng quả địa cầu), thêm nút dán, bố cục gọn hơn với biểu tượng, phím tay cầm (Shift / Dấu cách / Ký hiệu…) sáng lên khi bấm
