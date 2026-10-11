@@ -1,3 +1,7 @@
-- Steam chat overlay: tag thành viên — gõ @ để chọn người từ danh sách (↑/↓, Tab/Enter), người được tag nhận thông báo của Steam; @Tên hiện nổi bật, tin tag bạn có nền tím
-- Steam chat overlay: tự động copy code (code game, OTP, mã vào lobby) trong tin nhắn đến và báo "Đã copy code"; có thể tắt trong cài đặt
-- Bàn phím ảo: gõ được tiếng Việt (Telex / VNI, đổi qua biểu tượng quả địa cầu), thêm nút dán, bố cục gọn hơn với biểu tượng, phím tay cầm (Shift / Dấu cách / Ký hiệu…) sáng lên khi bấm
+- Chat overlay: gõ `/` để xem danh sách lệnh Steam (/me, /code, /spoiler, /random, /flip, /store…), `/me` hiển thị dạng hành động
+- Chat overlay: `/count N` đếm ngược N…1 rồi GO !!! (tuỳ chỉnh: `/count 5 0.5s Nhảy!`)
+- Chat overlay: gõ `:tên` gợi ý emoticon, `/room` `/group` và Ctrl+Tab đổi kênh / nhóm ngay trong game
+- Chat overlay: âm báo khi bị tag, chế độ chỉ hiện tin bị tag (`/quiet`), từ khoá cảnh báo (`/alert`)
+- Chat overlay: `/join <tên>` vào game của bạn bè như chuột phải → Join Game, `/invite <tên|all>` mời bạn vào lobby / game
+- Chat overlay: `/timer`, `/ready` (tính cả rồi / vô / ok / vào), `/afk` + `/back`, `/team`, `/pick`
+- Sửa khung chat nháy lên trên danh sách gợi ý
