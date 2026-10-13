@@ -1,7 +1,9 @@
-- Chat overlay: gõ `/` để xem danh sách lệnh Steam (/me, /code, /spoiler, /random, /flip, /store…), `/me` hiển thị dạng hành động
-- Chat overlay: `/count N` đếm ngược N…1 rồi GO !!! (tuỳ chỉnh: `/count 5 0.5s Nhảy!`)
-- Chat overlay: gõ `:tên` gợi ý emoticon, `/room` `/group` và Ctrl+Tab đổi kênh / nhóm ngay trong game
-- Chat overlay: âm báo khi bị tag, chế độ chỉ hiện tin bị tag (`/quiet`), từ khoá cảnh báo (`/alert`)
-- Chat overlay: `/join <tên>` vào game của bạn bè như chuột phải → Join Game, `/invite <tên|all>` mời bạn vào lobby / game
-- Chat overlay: `/timer`, `/ready` (tính cả rồi / vô / ok / vào), `/afk` + `/back`, `/team`, `/pick`
-- Sửa khung chat nháy lên trên danh sách gợi ý
+- Mới: **Upscaler** (sidebar → Công cụ nâng cao): cài / gỡ OptiScaler, cập nhật DLL FSR của AMD và HelixSR (DLSS Model E cho GPU AMD RDNA) cho từng game; danh sách game lấy từ Thư viện + Steam, chia tab theo nền tảng, tìm kiếm, sắp xếp, kéo đổi độ rộng cột; gỡ ra là thư mục game về y như cũ
+- Mới: **Quản lý tay cầm** — tab Kiểm tra tay cầm: GUID, VID:PID, loại, pin, mọi nút / trục / hat, hình tay cầm sáng theo nút, test độ tròn & drift của cần analog, test rung từ nhẹ tới mạnh (giữ B 1 giây để thoát chế độ test); tab Tổ hợp phím như cũ
+- Mới: báo **pin tay cầm yếu** ở góc dưới giữa màn hình game
+- Chat overlay: `/chat <tên> [tin nhắn]` mở chat riêng với bạn bè kèm lịch sử (và gửi luôn tin nhắn)
+- Chat overlay: bấm vào `# kênh ▾` ở ô chat để chuyển kênh / nhóm / chat riêng
+- Chat overlay: ảnh GIF từ /giphy đã hiển thị; Enter gửi luôn `/invite all` và tên đã gõ đủ
+- Sửa crash khi tải ảnh bìa game A rồi game B liền nhau (giờ xếp hàng)
+- Sửa dấu `&` trên nút / tab bị hiện thành gạch dưới
+- Bớt log thừa (tay cầm, quét Steam)
