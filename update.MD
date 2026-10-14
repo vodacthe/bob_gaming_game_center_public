@@ -1,9 +1,5 @@
-- Mới: **Upscaler** (sidebar → Công cụ nâng cao): cài / gỡ OptiScaler, cập nhật DLL FSR của AMD và HelixSR (DLSS Model E cho GPU AMD RDNA) cho từng game; danh sách game lấy từ Thư viện + Steam, chia tab theo nền tảng, tìm kiếm, sắp xếp, kéo đổi độ rộng cột; gỡ ra là thư mục game về y như cũ
-- Mới: **Quản lý tay cầm** — tab Kiểm tra tay cầm: GUID, VID:PID, loại, pin, mọi nút / trục / hat, hình tay cầm sáng theo nút, test độ tròn & drift của cần analog, test rung từ nhẹ tới mạnh (giữ B 1 giây để thoát chế độ test); tab Tổ hợp phím như cũ
-- Mới: báo **pin tay cầm yếu** ở góc dưới giữa màn hình game
-- Chat overlay: `/chat <tên> [tin nhắn]` mở chat riêng với bạn bè kèm lịch sử (và gửi luôn tin nhắn)
-- Chat overlay: bấm vào `# kênh ▾` ở ô chat để chuyển kênh / nhóm / chat riêng
-- Chat overlay: ảnh GIF từ /giphy đã hiển thị; Enter gửi luôn `/invite all` và tên đã gõ đủ
-- Sửa crash khi tải ảnh bìa game A rồi game B liền nhau (giờ xếp hàng)
-- Sửa dấu `&` trên nút / tab bị hiện thành gạch dưới
-- Bớt log thừa (tay cầm, quét Steam)
+- Mới: **Cửa hàng Online-Fix** (mục đầu tiên của Thư viện): tìm game Co-op / Multiplayer trên online-fix.me, tải torrent ngầm, tự giải nén (đúng mật khẩu của từng game) và tự thêm game vào Thư viện
+- Cửa hàng: nội dung tiếng Nga của trang được dịch sang tiếng Việt; nguồn Hosters / Drive / Mega / Yandex mở trên trình duyệt
+- Cửa hàng: đăng nhập online-fix.me bằng tên / mật khẩu (chỉ lưu phiên đăng nhập, không lưu mật khẩu)
+- Cửa hàng: thư mục cài mặc định `C:\Games`, đổi thư mục là tự nhớ cho lần sau
+- Danh sách tải: tốc độ, thời gian còn lại, tiến độ giải nén, hủy, mở thư mục, chơi ngay
