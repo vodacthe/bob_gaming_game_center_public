@@ -1,5 +1,6 @@
-- Mới: **Cửa hàng Online-Fix** (mục đầu tiên của Thư viện): tìm game Co-op / Multiplayer trên online-fix.me, tải torrent ngầm, tự giải nén (đúng mật khẩu của từng game) và tự thêm game vào Thư viện
-- Cửa hàng: nội dung tiếng Nga của trang được dịch sang tiếng Việt; nguồn Hosters / Drive / Mega / Yandex mở trên trình duyệt
-- Cửa hàng: đăng nhập online-fix.me bằng tên / mật khẩu (chỉ lưu phiên đăng nhập, không lưu mật khẩu)
-- Cửa hàng: thư mục cài mặc định `C:\Games`, đổi thư mục là tự nhớ cho lần sau
-- Danh sách tải: tốc độ, thời gian còn lại, tiến độ giải nén, hủy, mở thư mục, chơi ngay
+- Tự động thêm game vào Non-Steam Games của Steam sau khi cài đặt từ Online-Fix
+- Tự động tải đầy đủ 5 loại ảnh bìa (Poster, Grid, Hero, Logo, Icon) từ SteamGridDB / Steam CDN và áp dụng vào Steam
+- Tự động làm phẳng thư mục con bị trùng lặp khi giải nén game
+- Ghi nhớ và lưu vĩnh viễn thư mục cài đặt mặc định trong Cài đặt và cấu hình
+- Tự động làm sạch tên game (loại bỏ hậu tố Online / tiếng Nga)
+- Bảo vệ tuyệt đối các công cụ aria2 và 7z không bị xóa khi dọn dẹp file tạm
