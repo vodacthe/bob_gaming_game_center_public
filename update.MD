@@ -1,6 +1,1 @@
-- Tự động thêm game vào Non-Steam Games của Steam sau khi cài đặt từ Online-Fix
-- Tự động tải đầy đủ 5 loại ảnh bìa (Poster, Grid, Hero, Logo, Icon) từ SteamGridDB / Steam CDN và áp dụng vào Steam
-- Tự động làm phẳng thư mục con bị trùng lặp khi giải nén game
-- Ghi nhớ và lưu vĩnh viễn thư mục cài đặt mặc định trong Cài đặt và cấu hình
-- Tự động làm sạch tên game (loại bỏ hậu tố Online / tiếng Nga)
-- Bảo vệ tuyệt đối các công cụ aria2 và 7z không bị xóa khi dọn dẹp file tạm
+Hợp nhất kho game FitGirl Repacks và Online-Fix, tải danh sách bất đồng bộ hiển thị tức thì (nguồn nào xong trước hiện trước), gom nhóm các game trùng tên nằm cạnh nhau, lọc nhanh theo nguồn trên bộ nhớ đệm và tự động cài đặt ngầm FitGirl Repack.
