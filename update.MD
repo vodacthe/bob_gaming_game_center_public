@@ -1,1 +1,1 @@
-Hợp nhất kho game FitGirl Repacks và Online-Fix, tải danh sách bất đồng bộ hiển thị tức thì (nguồn nào xong trước hiện trước), gom nhóm các game trùng tên nằm cạnh nhau, lọc nhanh theo nguồn trên bộ nhớ đệm và tự động cài đặt ngầm FitGirl Repack.
+Khắc phục lỗi trích xuất nguồn tải Torrent trên một số bài viết FitGirl Repacks (như God of War III Remastered) và cập nhật nhãn thư mục cài đặt game mặc định trong Cài đặt.
