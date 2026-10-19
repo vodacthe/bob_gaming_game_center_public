@@ -1,5 +1,1 @@
-- Bổ sung tính năng Tạm dừng / Tiếp tục (Pause / Resume) tải game, lưu tiến trình bền vững vào config.json để tắt máy mở lại hoặc mất điện vẫn tải tiếp được
-- Hiển thị chi tiết dung lượng đã tải / tổng dung lượng / dung lượng còn lại và tính ETA tổng hợp chính xác cho cả Torrent và Direct CDN
-- Tải dữ liệu game trực tiếp vào thư mục cài đặt đã chọn và hợp nhất cấu hình Online-Fix vào config.json
-- Tải đầy đủ các gói tùy chọn (fg-optional-*) của FitGirl, tự động bỏ qua kiểm tra file (QuickSFV), DirectX/VC++ redist và redirect host.cmd sau khi cài
-- Sửa lỗi 'Failed to start embedded python interpreter' khi khởi chạy các game dùng launcher Python đóng gói (như God of War III Remastered)
+- Tự động xóa sạch các tệp đang tải dở và thư mục tải tạm của game khi người dùng bấm Hủy tải (Cancel) hoặc Xóa khỏi danh sách tải về (tránh chiếm dụng dung lượng ổ cứng)
