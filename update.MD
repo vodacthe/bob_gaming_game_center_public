@@ -1,4 +1,5 @@
-## Có gì mới trong v1.1.6
+## Có gì mới trong v1.2.0
 
-- **Steam Miễn Phí (Kho Game & Quét ngầm)**: Tự động quét ngầm mỗi giờ để tìm game và DLC trả phí đang giảm 100% về 0đ (giữ vĩnh viễn, bỏ qua game Free-to-Play và cuối tuần miễn phí) rồi tự thêm vào tài khoản Steam đang mở trên máy; bổ sung mục **Steam Miễn Phí** trong **Kho Game** để xem danh sách khuyến mãi trực tiếp, bấm **Quét ngay**, **Nhận ngay** hoặc **Mở Steam**, kèm tùy chọn bật/tắt trong **Cài đặt**.
-- **Danh sách tải về**: Bổ sung nút **Xóa mục đã hoàn tất** giúp dọn gọn các game đã tải và cài đặt xong khỏi danh sách tải mà không ảnh hưởng đến thư mục game trên ổ đĩa.
+- **Gộp game trùng lặp & chuyển đổi đa nguồn tải (Multi-Provider)**: Các game xuất hiện đồng thời trên **Online-Fix**, **SteamRIP** và **FitGirl Repacks** nay được gộp gọn về **1 thẻ duy nhất** kèm hàng nhãn rút gọn (`OF`, `SR`, `FG`) theo thứ tự ưu tiên `Online-Fix -> SteamRIP -> FitGirl`. Khi bấm mở game, có thể chuyển qua lại chọn bất kỳ kho tải nào ngay trong hộp thoại chi tiết.
+- **Tinh gọn điều hướng Kho Game & gỡ đăng nhập Online-Fix**: Rút gọn mục **Kho Game** trên thanh bên thành **Cửa hàng miễn phí** và **Steam Miễn Phí** (vẫn giữ bộ lọc nhanh từng kho ngay trên thanh tìm kiếm); loại bỏ bước đăng nhập `online-fix.me` không cần thiết.
+- **Sửa lỗi hiển thị hộp thoại chi tiết game**: Khắc phục lỗi khung ảnh bìa đè lên mục nguồn tải khi chuyển sang các bản gói cài đặt nhiều thông tin từ **FitGirl Repacks**.
