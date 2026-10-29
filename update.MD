@@ -1,6 +1,4 @@
-## Có gì mới trong v1.1.5
+## Có gì mới trong v1.1.6
 
-- **Steam Chat Overlay**: Hiển thị thẻ xem trước trực quan giống Steam cho video **YouTube** (ảnh thumbnail 16:9, kênh, tiêu đề), **Steam Store** (ảnh bìa game, mô tả, % giảm giá và giá tiền) và liên kết web **OpenGraph (`[og]`)**, hỗ trợ bấm mở trực tiếp khi đang bật khung chat.
-- **Kho Game (SteamRIP, FitGirl, Online-Fix)**: Bổ sung nguồn tải game **SteamRIP** (hỗ trợ Direct CDN Buzzheavier, Gofile, MegaDB, PixelDrain), tự động nạp ngầm dữ liệu trang kế tiếp dưới nền để lướt phân trang và lọc danh mục liên tục, kèm fallback ảnh bìa gốc từ nhà cung cấp.
-- **Khởi chạy & Gỡ cài đặt Game**: Game đã thêm vào Non-Steam khi bấm **Chơi** sẽ tự động khởi chạy qua Steam (`steam://rungameid`) để kích hoạt Steam Overlay & tay cầm; bổ sung tính năng **Gỡ cài đặt trò chơi** (xóa thư mục game, xóa khỏi Thư viện và dọn phím tắt + ảnh bìa Non-Steam).
-- **Tối ưu dung lượng**: Thu gọn kích thước file thực thi từ ~91 MB xuống còn **63.5 MB**.
+- **Steam Miễn Phí (Kho Game & Quét ngầm)**: Tự động quét ngầm mỗi giờ để tìm game và DLC trả phí đang giảm 100% về 0đ (giữ vĩnh viễn, bỏ qua game Free-to-Play và cuối tuần miễn phí) rồi tự thêm vào tài khoản Steam đang mở trên máy; bổ sung mục **Steam Miễn Phí** trong **Kho Game** để xem danh sách khuyến mãi trực tiếp, bấm **Quét ngay**, **Nhận ngay** hoặc **Mở Steam**, kèm tùy chọn bật/tắt trong **Cài đặt**.
+- **Danh sách tải về**: Bổ sung nút **Xóa mục đã hoàn tất** giúp dọn gọn các game đã tải và cài đặt xong khỏi danh sách tải mà không ảnh hưởng đến thư mục game trên ổ đĩa.
