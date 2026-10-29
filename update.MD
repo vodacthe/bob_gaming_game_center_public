@@ -1,6 +1,5 @@
-## Có gì mới trong v1.2.0
+## Có gì mới trong v1.2.1
 
-- **Gộp game trùng lặp & chuyển đổi đa nguồn tải (Multi-Provider)**: Các game xuất hiện đồng thời trên **Online-Fix**, **SteamRIP** và **FitGirl Repacks** nay được gộp gọn về **1 thẻ duy nhất** kèm hàng nhãn rút gọn (`OF`, `SR`, `FG`) theo thứ tự ưu tiên `Online-Fix -> SteamRIP -> FitGirl`. Khi bấm mở game, có thể chuyển qua lại chọn bất kỳ kho tải nào ngay trong hộp thoại chi tiết.
-- **Thông báo Windows khi cài đặt game hoàn tất**: Tự động hiển thị thông báo hệ thống ở góc màn hình khi game tải & cài đặt (giải nén / Silent Install) hoàn tất hoặc khi gặp lỗi gián đoạn; bấm vào thông báo để mở nhanh **Thư viện** hoặc **Danh sách tải**.
-- **Tinh gọn điều hướng Kho Game & gỡ đăng nhập Online-Fix**: Rút gọn mục **Kho Game** trên thanh bên thành **Cửa hàng miễn phí** và **Steam Miễn Phí** (vẫn giữ bộ lọc nhanh từng kho ngay trên thanh tìm kiếm); loại bỏ bước đăng nhập `online-fix.me` không cần thiết.
-- **Sửa lỗi hiển thị hộp thoại chi tiết game**: Khắc phục lỗi khung ảnh bìa đè lên mục nguồn tải khi chuyển sang các bản gói cài đặt nhiều thông tin từ **FitGirl Repacks**.
+- **Ra mắt công cụ Game Trainer (FLiNG Trainer)**: Tích hợp kho **FLiNG Trainer** ngay trong mục **Công cụ nâng cao** (nằm ngay dưới **Remote Gaming**) với tìm kiếm trực tiếp, bộ lọc chữ cái `A–Z`, danh sách phím tắt/tính năng cheat và quản lý các bản trainer đã tải.
+- **Tải & giải nén trực tiếp trong ứng dụng**: Bấm **Tải về** để tải thẳng gói trainer mới nhất và tự động giải nén sẵn sàng khởi chạy (không cần mở trình duyệt ngoài); mục **Chi tiết** hỗ trợ chọn tải riêng từng bản build ứng với các phiên bản game cũ hơn, kèm nút thêm thủ công gói `.zip` / `.rar` / `.7z` / `.exe`.
+- **Tinh chỉnh thanh điều hướng**: Đặt **Game Trainer** ngay dưới **Remote Gaming** để truy cập nhanh và gỡ nhãn `NEW` khỏi mục **Upscaler**.
