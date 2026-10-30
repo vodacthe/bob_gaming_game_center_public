@@ -1,5 +1,3 @@
-## Có gì mới trong v1.2.1
+## Có gì mới trong v1.2.2
 
-- **Ra mắt công cụ Game Trainer (FLiNG Trainer)**: Tích hợp kho **FLiNG Trainer** ngay trong mục **Công cụ nâng cao** (nằm ngay dưới **Remote Gaming**) với tìm kiếm trực tiếp, bộ lọc chữ cái `A–Z`, danh sách phím tắt/tính năng cheat và quản lý các bản trainer đã tải.
-- **Tải & giải nén trực tiếp trong ứng dụng**: Bấm **Tải về** để tải thẳng gói trainer mới nhất và tự động giải nén sẵn sàng khởi chạy (không cần mở trình duyệt ngoài); mục **Chi tiết** hỗ trợ chọn tải riêng từng bản build ứng với các phiên bản game cũ hơn, kèm nút thêm thủ công gói `.zip` / `.rar` / `.7z` / `.exe`.
-- **Tinh chỉnh thanh điều hướng**: Đặt **Game Trainer** ngay dưới **Remote Gaming** để truy cập nhanh và gỡ nhãn `NEW` khỏi mục **Upscaler**.
+- **Sửa lỗi nút "Mở Steam" trong mục Steam Miễn Phí 100%**: Khắc phục sự cố không mở được trang cửa hàng của Game và DLC khi bấm **Mở Steam**; nay điều hướng trực tiếp bên trong ứng dụng **Steam Desktop** (qua phiên CEF / giao thức `steam://store/<appid>`), tự động đưa cửa sổ Steam lên phía trước và dự phòng mở trình duyệt web nếu máy chưa cài Steam.
