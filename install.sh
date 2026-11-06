@@ -8,7 +8,7 @@
 set -euo pipefail
 
 TAG="[Packaging/Deck/OnlineInstall]"
-RAW_BASE="https://raw.githubusercontent.com/vodacthe/bob_gaming_game_center_public/main"
+RAW_BASE="${BOB_UPDATE_RAW_BASE:-https://raw.githubusercontent.com/vodacthe/bob_gaming_game_center_public/main}"
 PACKAGE_NAME="bob_game_center_deck.tar.gz"
 
 log() {
