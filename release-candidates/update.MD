@@ -1,5 +1,5 @@
-## Có gì mới trong v1.4.2-rc2 (Release Candidate)
+## Có gì mới trong v1.4.2-rc3 (Release Candidate)
 
-- **Sửa lỗi quét thiết bị LAN & ZeroTier thực tế (BobDrop)**: Khắc phục lỗi cú pháp dải mạng CIDR làm rơi gói quảng bá UDP trên IP thực (`192.168.x.x` / ZeroTier), ưu tiên địa chỉ IP cùng subnet khi máy có nhiều card mạng ảo (WSL/Hyper-V/VPN) và tự động đăng ký rule Windows Firewall giới hạn chặt `LocalSubnet` cho mạng để ở chế độ Public.
-- **Sửa mũi tên menu thả xuống (`QComboBox`)**: Thay thế toàn bộ style `border-top` gây lỗi hiển thị vạch ngang bằng biểu tượng mũi tên vector SVG sắc nét đồng bộ trên toàn ứng dụng.
-- **Chia sẻ LAN — BobDrop & Thu gọn nhóm Side Menu (từ RC1)**: Chia sẻ tệp/thư mục ngang hàng mã hoá TLS 1.3 + SAS 6 số + TOFU qua LAN/ZeroTier/VPN (Windows & SteamOS) và đóng/mở từng nhóm trên thanh bên.
+- **Báo rõ trạng thái từ chối / lỗi gửi cho người gửi (BobDrop)**: Khi người nhận bấm Từ chối, hết thời gian chờ xác nhận hoặc phiên gửi gặp lỗi, màn hình người gửi nay cập nhật ngay thanh trạng thái đỏ, gắn nhãn màu `[BỊ TỪ CHỐI]` / `[THẤT BẠI]` trên dòng phiên truyền, đồng thời hiện hộp thoại báo rõ (hoặc bắn thông báo khay hệ thống khi đang thu nhỏ / gửi hàng loạt nhiều máy).
+- **Hỗ trợ gửi thư mục game lớn (> 2 GB & hàng chục nghìn tệp)**: Nâng giới hạn bản kê khai truyền lên 100.000 tệp (khung điều khiển 16 MB) và sửa lỗi tràn số 32-bit (`OverflowError`) khi quét dung lượng tệp/thư mục lớn hơn 2 GB. *(Lưu ý: Cả máy gửi và máy nhận cần cùng cập nhật lên v1.4.2-rc3 để truyền thư mục nhiều nghìn tệp).*
+- **Sửa lỗi quét mạng LAN / ZeroTier & Mũi tên QComboBox (từ RC2)**: Đồng bộ phát hiện thiết bị qua LAN/ZeroTier thực tế, tự cấu hình rule Windows Firewall `LocalSubnet` và thay mũi tên `QComboBox` bằng vector SVG.
