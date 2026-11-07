@@ -1,5 +1,5 @@
-## Có gì mới trong v1.4.1
+## Có gì mới trong v1.4.2
 
-- **Kênh cập nhật ứng dụng (Update Channel)**: Bổ sung menu thả xuống kiểu Steam trong **Cài đặt hệ thống** cho phép chuyển đổi tức thì giữa kênh **Stable** và **Release Candidates** (`/release-candidates/*`), tự động hiển thị hộp thoại cập nhật ngay khi đổi kênh.
-- **Nút Thông tin trên Steam trong chi tiết game**: Thêm nút mở trực tiếp trang cửa hàng trò chơi trên Steam Client (`steam://store/<appid>`) ngay đầu hàng hành động chi tiết game.
-- **Tinh gọn giao diện Kho Game**: Lược bỏ nút chia sẻ nhanh bên ngoài thẻ game ở màn hình danh sách để giao diện Kho Game thoáng và gọn hơn.
+- **Chia sẻ file nội bộ — BobDrop (AirDrop qua LAN / ZeroTier / VPN)**: Bổ sung công cụ truyền tệp và thư mục game lớn (lên tới 100.000 tệp, không giới hạn dung lượng) trực tiếp giữa PC Windows và Steam Deck / Linux trong cùng mạng nội bộ, ZeroTier hoặc VPN chung mạng. Bảo mật đầu-cuối bằng TLS 1.3, đối chiếu mã 6 số chống nghe lén (SAS), ghim khoá tin cậy (TOFU), Mã phòng (PIN) tuỳ chọn, hỗ trợ kéo thả gửi 1-1 hoặc **Chia sẻ cho tất cả** và chạy ngầm dưới khay hệ thống.
+- **Thu gọn nhóm trên thanh menu bên (Collapsible Sidebar)**: Cho phép bấm đóng/mở từng nhóm chức năng (`KHO GAME`, `THƯ VIỆN`, `CÔNG CỤ NÂNG CAO`, `THIẾT BỊ`, `HỆ THỐNG`), tự động lưu trạng thái cho các lần mở sau và tự bung nhóm khi điều hướng.
+- **Cải thiện giao diện & kết nối thực tế**: Đồng bộ biểu tượng mũi tên vector SVG cho toàn bộ menu thả xuống (`QComboBox`), tự động cấu hình rule Windows Firewall giới hạn chặt trong `LocalSubnet`/LAN và hiển thị cảnh báo rõ ràng cho người gửi khi lời mời bị từ chối hoặc gián đoạn.
