@@ -1,5 +1,5 @@
-## Có gì mới trong v1.4.2-rc1 (Release Candidate)
+## Có gì mới trong v1.4.2-rc2 (Release Candidate)
 
-- **Chia sẻ LAN — BobDrop (AirDrop nội bộ & VPN)**: Truyền trực tiếp nhiều tệp và nguyên thư mục ngang hàng (P2P) qua mạng LAN, ZeroTier, Radmin VPN và Tailscale (hỗ trợ cả chéo nền tảng Windows & SteamOS / Steam Deck). Hỗ trợ kéo thả, gửi chọn lọc hoặc **Chia sẻ cho tất cả**, chạy nền dưới khay hệ thống với 3 chế độ nhận tệp.
-- **Mã hoá bảo mật chống giả mạo**: Bảo vệ luồng truyền bằng **TLS 1.3** đầu-cuối, chữ ký định danh ECDSA P-256 gắn kênh chống MITM, mã đối chiếu 6 chữ số (SAS), ghim khoá thiết bị tin cậy (**TOFU**), Mã PIN phòng (`PBKDF2-HMAC-SHA256`) và kiểm tra toàn vẹn `SHA-256` từng tệp trước khi hoàn tất.
-- **Thu gọn Side Menu theo từng nhóm**: Bấm trực tiếp vào tiêu đề từng nhóm trên thanh bên (`KHO GAME`, `THƯ VIỆN`, `CÔNG CỤ NÂNG CAO`, `THIẾT BỊ`, `HỆ THỐNG`) để đóng/mở gọn gàng, tự động lưu trạng thái cho các lần khởi động sau và hiển thị chấm đèn báo khi có tính năng chạy nền bên trong nhóm đang thu gọn.
+- **Sửa lỗi quét thiết bị LAN & ZeroTier thực tế (BobDrop)**: Khắc phục lỗi cú pháp dải mạng CIDR làm rơi gói quảng bá UDP trên IP thực (`192.168.x.x` / ZeroTier), ưu tiên địa chỉ IP cùng subnet khi máy có nhiều card mạng ảo (WSL/Hyper-V/VPN) và tự động đăng ký rule Windows Firewall giới hạn chặt `LocalSubnet` cho mạng để ở chế độ Public.
+- **Sửa mũi tên menu thả xuống (`QComboBox`)**: Thay thế toàn bộ style `border-top` gây lỗi hiển thị vạch ngang bằng biểu tượng mũi tên vector SVG sắc nét đồng bộ trên toàn ứng dụng.
+- **Chia sẻ LAN — BobDrop & Thu gọn nhóm Side Menu (từ RC1)**: Chia sẻ tệp/thư mục ngang hàng mã hoá TLS 1.3 + SAS 6 số + TOFU qua LAN/ZeroTier/VPN (Windows & SteamOS) và đóng/mở từng nhóm trên thanh bên.
