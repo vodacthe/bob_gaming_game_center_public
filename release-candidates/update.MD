@@ -1,11 +1,4 @@
-### Sửa lỗi ở bản 1.4.3-rc2
-- **Khắc phục lỗi văng ứng dụng (`QThread` crash):** Sửa triệt để lỗi đóng ứng dụng đột ngột khi luồng kiểm tra trạng thái Cloud (`CloudCheckBatchWorker`) kết thúc đúng lúc giao diện đang nạp lại danh sách Thư viện game.
-- **Tối ưu tốc độ mở lại Thư viện khi hiện game Steam:** Bỏ qua bước quét đồng bộ tệp `.exe` trên luồng giao diện chính đối với các game Steam chính thức (vốn khởi chạy qua `steam://rungameid/<appid>`), loại bỏ hiện tượng khựng giao diện (~3.8 giây) khi tắt tùy chọn *Ẩn game Steam*.
-
-### Tính năng mới — Việt Hoá tự động 1-Click (Bản thử nghiệm RC)
-- **Huy hiệu Cờ Việt Nam (VN Badge):** Tự động nhận diện các tựa game có bản Việt Hoá trên cả **Online-Fix Store** và **Thư viện Game** (chế độ Lưới & Danh sách), hiển thị tag cờ đỏ sao vàng sắc nét đồng bộ với tag `HV`.
-- **Cài đặt & Gỡ Việt Hoá 1-Click trong Thư viện:** Bổ sung nút **Cài đặt Việt Hoá** ngay trên thẻ game có hỗ trợ:
-  - Tự động tải gói Việt Hoá (hỗ trợ GitHub Releases, Google Drive vượt xác nhận quét virus, Pixeldrain và mirror dự phòng), kiểm tra toàn vẹn `SHA-256`, tự nhận diện định dạng nén (`.zip`, `.rar`, `.7z`, `.pak`, ...) và chép thẳng vào đúng thư mục con của game mà không cần thao tác thủ công.
-  - Tự động sao lưu (backup) các tệp gốc trước khi ghi đè và hỗ trợ **Gỡ Việt Hoá** khôi phục nguyên trạng game bất kỳ lúc nào.
-  - Tự động dò tìm thư mục cài đặt game qua Steam (`libraryfolders.vdf` / `appmanifest_<appid>.acf`) kể cả khi game chưa chạy lần đầu.
-- **Danh mục Việt Hoá tích hợp sẵn (`v2`):** Bao gồm 16 tựa game đã xác thực mã băm `SHA-256` (RimWorld, Project Zomboid, State of Decay 2, Kingdom Come: Deliverance II, Black Myth: Wukong, Elden Ring, Red Dead Redemption 2, Grand Theft Auto V, The Witcher 3, Cyberpunk 2077, Valheim, Civilization VI, Cities: Skylines II, Dawn of Man, Subnautica: Below Zero, Resident Evil 4 Remake).
+### Cập nhật ở bản 1.4.3-rc3
+- **Chuyển nút Cài đặt / Gỡ Việt Hoá vào Chi tiết trò chơi**: Gỡ nút hành động Việt Hoá ở mặt trước thẻ game để thẻ gọn đẹp đúng bố cục gốc; toàn bộ nút **Cài đặt Việt Hoá**, **Cài đặt lại**, **Gỡ Việt Hoá (khôi phục file gốc)** và thanh tiến trình trực tiếp nằm gọn trong cửa sổ **Chi tiết trò chơi** khi click vào bất kỳ game nào trong Thư viện (hỗ trợ cả game Steam bản quyền lẫn game chưa kết nối Cloud).
+- **Hiển thị trạng thái kế bên Đã cài đặt**: Hiển thị trực tiếp `● Đã Việt Hoá` (hoặc `● Đang Việt Hoá XX%` khi đang tải/cài) nằm ngay kế bên `● Đã cài đặt` trên thẻ game và danh sách game.
+- **Tự động cập nhật danh mục nguồn Việt Hoá (OTA)**: Ứng dụng tự động đồng bộ `vietnamese_catalog.json` mới nhất từ máy chủ cập nhật ngầm khi khởi động và định kỳ mỗi 15 phút mà không cần chờ cập nhật lại file `.exe` (vẫn hoạt động offline bình thường với danh mục lưu đệm / tích hợp sẵn).

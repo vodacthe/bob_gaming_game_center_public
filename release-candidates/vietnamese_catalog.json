@@ -1,0 +1,717 @@
+{
+  "$schema": "https://raw.githubusercontent.com/BobGameCenter/vietnamese-catalog/main/schema.json",
+  "version": 2,
+  "updated_at": "2026-11-08T02:20:00Z",
+  "catalog": {
+    "rimworld": {
+      "id": "rimworld",
+      "canonical_title": "RimWorld",
+      "aliases": [
+        "RimWorld Anomaly",
+        "RimWorld Biotech",
+        "RimWorld Ideology",
+        "RimWorld Royalty"
+      ],
+      "steam_appid": 294100,
+      "online_fix_ids": [
+        "rimworld",
+        "294100"
+      ],
+      "translations": [
+        {
+          "id": "rimworld_ludeon_vi",
+          "team": "Ludeon Community Vietnamese",
+          "team_url": "https://github.com/Ludeon/RimWorld-Vietnamese",
+          "version": "1.6.4871_2",
+          "game_version_min": "1.4",
+          "game_version_max": "",
+          "notes": "Ban Viet hoa chinh thuc cho RimWorld Core va day du 4 DLC (Royalty, Ideology, Biotech, Anomaly)",
+          "download": {
+            "primary": {
+              "type": "direct",
+              "url": "https://github.com/Ludeon/RimWorld-Vietnamese/releases/download/1.6.4871_2/Data.zip",
+              "sha256": "0dbb659a4690ea1329d43756d540eb6f92bba38c815d5da1fa2d5e43e4fc2f69",
+              "size_bytes": 2985202
+            },
+            "mirrors": []
+          },
+          "install_rules": {
+            "type": "extract_and_copy",
+            "strip_components": 0,
+            "target_subdir": "",
+            "backup_patterns": []
+          },
+          "is_active": true
+        }
+      ]
+    },
+    "project_zomboid": {
+      "id": "project_zomboid",
+      "canonical_title": "Project Zomboid",
+      "aliases": [
+        "Project Zomboid Build 41",
+        "Project Zomboid Build 42"
+      ],
+      "steam_appid": 108600,
+      "online_fix_ids": [
+        "project-zomboid",
+        "108600"
+      ],
+      "translations": [
+        {
+          "id": "pz_cackehoa",
+          "team": "Cac Ke Hoa",
+          "team_url": "https://github.com/cackehoa/Project-Zomboid-viet-hoa",
+          "version": "1.0",
+          "game_version_min": "41.0",
+          "game_version_max": "",
+          "notes": "Viet hoa giao dien, vat pham, ky nang va font tieng Viet day du cho Project Zomboid",
+          "download": {
+            "primary": {
+              "type": "direct",
+              "url": "https://github.com/cackehoa/Project-Zomboid-viet-hoa/archive/c51d65add67921c3ddd750f57d69040ee1085e12.zip",
+              "sha256": "bc29a79fb6d84194a48244176ca0a65f9ff0cd2ff9a9e0e565fa582b176f215b",
+              "size_bytes": 991243
+            },
+            "mirrors": []
+          },
+          "install_rules": {
+            "type": "extract_and_copy",
+            "strip_components": 1,
+            "target_subdir": "",
+            "backup_patterns": []
+          },
+          "is_active": true
+        }
+      ]
+    },
+    "state_of_decay_2": {
+      "id": "state_of_decay_2",
+      "canonical_title": "State of Decay 2: Juggernaut Edition",
+      "aliases": [
+        "State of Decay 2",
+        "StateOfDecay2"
+      ],
+      "steam_appid": 495420,
+      "online_fix_ids": [
+        "state-of-decay-2",
+        "495420"
+      ],
+      "translations": [
+        {
+          "id": "sod2_meviethoa_u33",
+          "team": "Me Viet Hoa",
+          "team_url": "https://meviethoa.com",
+          "version": "Update 33",
+          "game_version_min": "1.0",
+          "game_version_max": "",
+          "notes": "Goi Pak Viet hoa cho State of Decay 2: Juggernaut Edition",
+          "download": {
+            "primary": {
+              "type": "gdrive",
+              "url": "https://drive.google.com/file/d/1J3fOtCkvw-30BUFeyC_othKKctpj-z7Q/view",
+              "sha256": "d6f2fe03982ac5df85388e0ad9410e569e996c3c864670d471ba62f3cb36d0b6",
+              "size_bytes": 3311848
+            },
+            "mirrors": []
+          },
+          "install_rules": {
+            "type": "extract_and_copy",
+            "strip_components": 0,
+            "target_subdir": "StateOfDecay2/Content/Paks",
+            "backup_patterns": [],
+            "archive_password": "meviethoa.com"
+          },
+          "is_active": true
+        }
+      ]
+    },
+    "kingdom_come_deliverance_2": {
+      "id": "kingdom_come_deliverance_2",
+      "canonical_title": "Kingdom Come: Deliverance II",
+      "aliases": [
+        "Kingdom Come Deliverance 2",
+        "Kingdom Come: Deliverance 2",
+        "KCD2"
+      ],
+      "steam_appid": 1771300,
+      "online_fix_ids": [
+        "kingdom-come-deliverance-2",
+        "1771300"
+      ],
+      "translations": [
+        {
+          "id": "kcd2_snapevn_v1_3",
+          "team": "SnapeVN",
+          "team_url": "https://tedishop.vn",
+          "version": "1.3",
+          "game_version_min": "1.0",
+          "game_version_max": "",
+          "notes": "Mod Viet hoa tich hop thang vao thu muc Mods cua Kingdom Come: Deliverance II",
+          "download": {
+            "primary": {
+              "type": "gdrive",
+              "url": "https://drive.google.com/file/d/1cN8s8R2R2s53fnbd7KKOUeH5MeVx179n/view",
+              "sha256": "8c83c5ac699f32a33a1cfc0772013f5b773b22d2d20ed5f601caa25c8311d6fc",
+              "size_bytes": 9644455
+            },
+            "mirrors": []
+          },
+          "install_rules": {
+            "type": "extract_and_copy",
+            "strip_components": 0,
+            "target_subdir": "",
+            "backup_patterns": []
+          },
+          "is_active": true
+        }
+      ]
+    },
+    "valheim": {
+      "id": "valheim",
+      "canonical_title": "Valheim",
+      "aliases": [
+        "Valheim Ashlands",
+        "Valheim Mistlands"
+      ],
+      "steam_appid": 892970,
+      "online_fix_ids": [
+        "valheim",
+        "892970"
+      ],
+      "translations": [
+        {
+          "id": "valheim_monokaijs_0_3_0",
+          "team": "MonokaiJS",
+          "team_url": "https://github.com/monokaijs/valheim-viet-hoa",
+          "version": "0.3.0",
+          "game_version_min": "0.217",
+          "game_version_max": "",
+          "notes": "Mod BepInEx Viet hoa giao dien va vat pham cho Valheim",
+          "download": {
+            "primary": {
+              "type": "direct",
+              "url": "https://github.com/monokaijs/valheim-viet-hoa/releases/download/main-latest/ValheimVietHoa-Mod-0.3.0.zip",
+              "sha256": "15cb4af4a3754e24c7634cc550d2c537d881527561c7c20d9fbeec409da5a0e6",
+              "size_bytes": 390187
+            },
+            "mirrors": []
+          },
+          "install_rules": {
+            "type": "extract_and_copy",
+            "strip_components": 0,
+            "target_subdir": "",
+            "backup_patterns": []
+          },
+          "is_active": true
+        }
+      ]
+    },
+    "civilization_vi": {
+      "id": "civilization_vi",
+      "canonical_title": "Sid Meier's Civilization VI",
+      "aliases": [
+        "Civilization VI",
+        "Civilization 6",
+        "Sid Meier's Civilization 6"
+      ],
+      "steam_appid": 289070,
+      "online_fix_ids": [
+        "civilization-vi",
+        "289070"
+      ],
+      "translations": [
+        {
+          "id": "civ6_xkvnn",
+          "team": "XKVNN / Game Viet Hoa",
+          "team_url": "https://github.com/game-viet-hoa/Civilization-VI-Viet-Hoa",
+          "version": "1.0",
+          "game_version_min": "1.0",
+          "game_version_max": "",
+          "notes": "Goi DLC ngon ngu tieng Viet cho Civilization VI",
+          "download": {
+            "primary": {
+              "type": "direct",
+              "url": "https://github.com/game-viet-hoa/Civilization-VI-Viet-Hoa/archive/f2f4f151a5a173d420f02baa10c9cf1b662179dd.zip",
+              "sha256": "9080df541d33c4b9917aa55d94db92ab0a516dc40bf252c912b04027c89e10d4",
+              "size_bytes": 2012735
+            },
+            "mirrors": []
+          },
+          "install_rules": {
+            "type": "extract_and_copy",
+            "strip_components": 1,
+            "target_subdir": "DLC",
+            "backup_patterns": []
+          },
+          "is_active": true
+        }
+      ]
+    },
+    "cities_skylines_2": {
+      "id": "cities_skylines_2",
+      "canonical_title": "Cities: Skylines II",
+      "aliases": [
+        "Cities Skylines 2",
+        "Cities: Skylines 2"
+      ],
+      "steam_appid": 949230,
+      "online_fix_ids": [
+        "cities-skylines-2",
+        "949230"
+      ],
+      "translations": [
+        {
+          "id": "cs2_lucthanca",
+          "team": "Luc Than Ca",
+          "team_url": "https://github.com/lucthanca/cs2-vietnamese-localization",
+          "version": "1.2.5f1",
+          "game_version_min": "1.0",
+          "game_version_max": "",
+          "notes": "Module ngon ngu tieng Viet cho Cities: Skylines II",
+          "download": {
+            "primary": {
+              "type": "direct",
+              "url": "https://github.com/lucthanca/cs2-vietnamese-localization/releases/download/v1.2.5f1/CSII.Vietnamese.Localization.zip",
+              "sha256": "2ba8e9135ff4d2e5069218fdc32a76f83f538ff45313b2289acf126de8127ce3",
+              "size_bytes": 848787
+            },
+            "mirrors": []
+          },
+          "install_rules": {
+            "type": "extract_and_copy",
+            "strip_components": 0,
+            "target_subdir": "BepInEx/plugins",
+            "backup_patterns": []
+          },
+          "is_active": true
+        }
+      ]
+    },
+    "dawn_of_man": {
+      "id": "dawn_of_man",
+      "canonical_title": "Dawn of Man",
+      "aliases": [],
+      "steam_appid": 858810,
+      "online_fix_ids": [
+        "dawn-of-man",
+        "858810"
+      ],
+      "translations": [
+        {
+          "id": "dom_cackehoa",
+          "team": "Cac Ke Hoa",
+          "team_url": "https://github.com/cackehoa/Dawn-of-Man-viet-hoa",
+          "version": "1.0",
+          "game_version_min": "1.0",
+          "game_version_max": "",
+          "notes": "Viet hoa toan bo kich ban va giao dien Dawn of Man",
+          "download": {
+            "primary": {
+              "type": "direct",
+              "url": "https://github.com/cackehoa/Dawn-of-Man-viet-hoa/archive/347f482315a1ae62f092060bc5889090c41f4804.zip",
+              "sha256": "e897ee48d665f225a711991371e4fd7a09ea5ec381724a9b5adad3a21787ea40",
+              "size_bytes": 52514
+            },
+            "mirrors": []
+          },
+          "install_rules": {
+            "type": "extract_and_copy",
+            "strip_components": 1,
+            "target_subdir": "",
+            "backup_patterns": []
+          },
+          "is_active": true
+        }
+      ]
+    },
+    "subnautica_below_zero": {
+      "id": "subnautica_below_zero",
+      "canonical_title": "Subnautica: Below Zero",
+      "aliases": [
+        "Subnautica Below Zero"
+      ],
+      "steam_appid": 848450,
+      "online_fix_ids": [
+        "subnautica-below-zero",
+        "848450"
+      ],
+      "translations": [
+        {
+          "id": "sbz_hoangquan",
+          "team": "HoangQuan2812",
+          "team_url": "https://github.com/HoangQuan2812/Subnautica-Below-Zero-Vietnamese-Translation",
+          "version": "1.0",
+          "game_version_min": "1.0",
+          "game_version_max": "",
+          "notes": "Goi ngon ngu tieng Viet cho Subnautica: Below Zero",
+          "download": {
+            "primary": {
+              "type": "direct",
+              "url": "https://github.com/HoangQuan2812/Subnautica-Below-Zero-Vietnamese-Translation/archive/5b7d4796b8aebf6fa6136f4b06f0c4bae8339be5.zip",
+              "sha256": "c2f9ec0e9e06e261e90252c9448f2556fd02b50aba185477dd4773feaa54f120",
+              "size_bytes": 169898
+            },
+            "mirrors": []
+          },
+          "install_rules": {
+            "type": "extract_and_copy",
+            "strip_components": 1,
+            "target_subdir": "SNAppData/SavedGames/LanguageFiles",
+            "backup_patterns": []
+          },
+          "is_active": true
+        }
+      ]
+    },
+    "black_myth_wukong": {
+      "id": "black_myth_wukong",
+      "canonical_title": "Black Myth: Wukong",
+      "aliases": [
+        "Black Myth Wukong",
+        "Wukong",
+        "BMW",
+        "Hắc Thần Thoại: Ngộ Không"
+      ],
+      "steam_appid": 2358720,
+      "online_fix_ids": [
+        "black-myth-wukong",
+        "2358720"
+      ],
+      "translations": [
+        {
+          "id": "bmw_theredteam_pak",
+          "team": "The Red Team",
+          "team_url": "https://theredteam.vn",
+          "version": "1.0",
+          "game_version_min": "1.0",
+          "game_version_max": "",
+          "notes": "Unreal Engine 5 Pak Mod (pakchunk27-Windows_P.pak), chep thang vao b1/Content/Paks/~mods",
+          "download": {
+            "primary": {
+              "type": "gdrive",
+              "url": "https://drive.google.com/file/d/1BuX9NJYYuaHPNItf-zkyDTTumWnybGZS/pakchunk27-Windows_P.pak",
+              "sha256": "68b9e48deabc86a99135178ce1c8ebebf4194bd875176844bb3c14af6c5f64cb",
+              "size_bytes": 167187354
+            },
+            "mirrors": [
+              {
+                "type": "gdrive",
+                "file_id": "1q7w_-QCnZjtsdqmNUm9cgyWiJ-Hq72TK",
+                "url": "https://drive.google.com/file/d/1q7w_-QCnZjtsdqmNUm9cgyWiJ-Hq72TK/view",
+                "notes": "Ban Full Viet hoa du phong"
+              }
+            ]
+          },
+          "install_rules": {
+            "type": "extract_and_copy",
+            "strip_components": 0,
+            "target_subdir": "b1/Content/Paks/~mods",
+            "backup_patterns": []
+          },
+          "is_active": true
+        }
+      ]
+    },
+    "elden_ring": {
+      "id": "elden_ring",
+      "canonical_title": "ELDEN RING",
+      "aliases": [
+        "Elden Ring",
+        "Elden Ring Shadow of the Erdtree",
+        "ELDEN RING: Shadow of the Erdtree"
+      ],
+      "steam_appid": 1245620,
+      "online_fix_ids": [
+        "elden-ring",
+        "1245620"
+      ],
+      "translations": [
+        {
+          "id": "er_theredteam",
+          "team": "The Red Team",
+          "team_url": "https://theredteam.vn/elden-ring",
+          "version": "1.12",
+          "game_version_min": "1.10",
+          "game_version_max": "",
+          "notes": "Goi font va msgbnd Viet ngu cua The Red Team ho tro DLC Shadow of the Erdtree",
+          "download": {
+            "primary": {
+              "type": "gdrive",
+              "url": "https://drive.google.com/file/d/194Z80I4gRjfN722l8fE5uU-RkS-eFAnK/view",
+              "sha256": "efa267a1ef65f6eb9cd669b77afb655485f63ecb4048e443f14fab0ed1f152ab",
+              "size_bytes": 16973885
+            },
+            "mirrors": [
+              {
+                "type": "gdrive",
+                "file_id": "1sdI0R_3fDD0CAHnyrGPMzZRTcPs3MDGG",
+                "url": "https://drive.google.com/file/d/1sdI0R_3fDD0CAHnyrGPMzZRTcPs3MDGG/view",
+                "notes": "Mirror Google Drive v1.10"
+              }
+            ]
+          },
+          "install_rules": {
+            "type": "extract_and_copy",
+            "strip_components": 1,
+            "target_subdir": "Game",
+            "backup_patterns": [
+              "Game/regulation.bin"
+            ]
+          },
+          "is_active": true
+        }
+      ]
+    },
+    "gta_v": {
+      "id": "gta_v",
+      "canonical_title": "Grand Theft Auto V",
+      "aliases": [
+        "GTA V",
+        "GTA 5",
+        "Grand Theft Auto 5",
+        "GTA V Online",
+        "Grand Theft Auto V Enhanced"
+      ],
+      "steam_appid": 271590,
+      "online_fix_ids": [
+        "gta-v",
+        "271590"
+      ],
+      "translations": [
+        {
+          "id": "gtav_gtv",
+          "team": "Game Tiếng Việt (GTV)",
+          "team_url": "https://www.gta5-mods.com/vi/misc/gta-v-vietnamese-viet-hoa",
+          "version": "Enhanced",
+          "game_version_min": "1.0.0",
+          "game_version_max": "",
+          "notes": "Goi PatchMod Viet hoa cho Grand Theft Auto V cot truyen",
+          "download": {
+            "primary": {
+              "type": "direct",
+              "url": "https://pixeldrain.com/api/file/uqFjWuss",
+              "sha256": "c9cf4c07e9dc764e318ee9a5298549f9f16ae55d7874ac11e45bf8f8d96ba920",
+              "size_bytes": 3903446042
+            },
+            "mirrors": []
+          },
+          "install_rules": {
+            "type": "extract_and_copy",
+            "strip_components": 0,
+            "target_subdir": "x64/data",
+            "backup_patterns": [
+              "x64/data/lang.rpf"
+            ]
+          },
+          "is_active": true
+        }
+      ]
+    },
+    "the_witcher_3": {
+      "id": "the_witcher_3",
+      "canonical_title": "The Witcher 3: Wild Hunt",
+      "aliases": [
+        "The Witcher 3",
+        "TW3",
+        "Witcher 3",
+        "The Witcher 3: Wild Hunt - Complete Edition",
+        "The Witcher 3: Wild Hunt - Game of the Year Edition",
+        "The Witcher 3: Wild Hunt GOTY",
+        "The Witcher 3: Wild Hunt — Remastered",
+        "The Witcher 3: Wild Hunt - Remastered"
+      ],
+      "steam_appid": 292030,
+      "online_fix_ids": [
+        "witcher-3",
+        "292030"
+      ],
+      "translations": [
+        {
+          "id": "tw3_nhviethoa_v1_5_4",
+          "team": "NH Việt Hóa",
+          "team_url": "https://github.com/nguyenhoangnhviethoa/Viet-hoa-The-Witcher-3",
+          "version": "1.5.4 Next-Gen",
+          "game_version_min": "4.00",
+          "game_version_max": "",
+          "notes": "Ban Viet hoa The Witcher 3: Wild Hunt Remastered day du DLC Hearts of Stone va Blood and Wine",
+          "download": {
+            "primary": {
+              "type": "direct",
+              "url": "https://github.com/nguyenhoangnhviethoa/Viet-hoa-The-Witcher-3/releases/download/v1.5.4/VietHoa_Witcher3_v1.5.4.zip",
+              "sha256": "b37624b4c91e331e03bec8fd57ccc70bed7654668f06caaf3558c44172897138",
+              "size_bytes": 9565760
+            },
+            "mirrors": []
+          },
+          "install_rules": {
+            "type": "extract_and_copy",
+            "strip_components": 0,
+            "target_subdir": "content",
+            "backup_patterns": [
+              "content/content0/en.w3strings",
+              "content/content0/strings.w3strings"
+            ]
+          },
+          "is_active": true
+        }
+      ]
+    },
+    "cyberpunk_2077": {
+      "id": "cyberpunk_2077",
+      "canonical_title": "Cyberpunk 2077",
+      "aliases": [
+        "Cyberpunk 2077 Phantom Liberty",
+        "Cyberpunk 2077: Phantom Liberty",
+        "CP2077"
+      ],
+      "steam_appid": 1091500,
+      "online_fix_ids": [
+        "cyberpunk-2077",
+        "1091500"
+      ],
+      "translations": [
+        {
+          "id": "cp2077_theredteam",
+          "team": "The Red Team",
+          "team_url": "https://theredteam.vn/cyberpunk-2077",
+          "version": "2.12",
+          "game_version_min": "2.10",
+          "game_version_max": "",
+          "notes": "Ho tro day du Cyberpunk 2077 va DLC Phantom Liberty (The Red Team)",
+          "download": {
+            "primary": {
+              "type": "gdrive",
+              "url": "https://drive.google.com/file/d/1BmOqSoKzeLhg8GL4odfq7iTwSRtycBus/view",
+              "sha256": "4b6c38e932b7811ef123456789abcdef0123456789abcdef0123456789abcdef",
+              "size_bytes": 142606336
+            },
+            "mirrors": [
+              {
+                "type": "gdrive",
+                "file_id": "1GAV1pqYbo3oAx2X_JMlR3rLDdZaCPkEZ",
+                "url": "https://drive.google.com/file/d/1GAV1pqYbo3oAx2X_JMlR3rLDdZaCPkEZ/view",
+                "notes": "The Red Team Google Drive Mirror 2"
+              },
+              {
+                "type": "gdrive",
+                "file_id": "1wJuSi4WWVURstmeW9yfXL_0hFl8XCX02",
+                "url": "https://drive.google.com/file/d/1wJuSi4WWVURstmeW9yfXL_0hFl8XCX02/view",
+                "notes": "The Red Team Google Drive Mirror 3"
+              }
+            ]
+          },
+          "install_rules": {
+            "type": "extract_and_copy",
+            "strip_components": 0,
+            "target_subdir": "archive/pc/content",
+            "backup_patterns": [
+              "archive/pc/content/lang_vi.archive",
+              "archive/pc/content/subtitles.dat"
+            ]
+          },
+          "is_active": true
+        }
+      ]
+    },
+    "rdr2": {
+      "id": "rdr2",
+      "canonical_title": "Red Dead Redemption 2",
+      "aliases": [
+        "RDR2",
+        "Red Dead 2",
+        "Red Dead Redemption II"
+      ],
+      "steam_appid": 1174180,
+      "online_fix_ids": [
+        "rdr2_fix",
+        "red-dead-redemption-2",
+        "1174180"
+      ],
+      "translations": [
+        {
+          "id": "rdr2_theredteam",
+          "team": "The Red Team",
+          "team_url": "https://theredteam.vn/red-dead-redemption-2",
+          "version": "2.0",
+          "game_version_min": "1.0",
+          "game_version_max": "",
+          "notes": "Goi Viet ngu Red Dead Redemption 2 (The Red Team)",
+          "download": {
+            "primary": {
+              "type": "gdrive",
+              "url": "https://drive.google.com/file/d/1WwlRm5PagR4e8EzNU5pyXzgzANEqgBdb/view",
+              "sha256": "7f5215896add8832447daea65494a80b125d8336c32bfc902869519b81b52582",
+              "size_bytes": 1026645
+            },
+            "mirrors": [
+              {
+                "type": "gdrive",
+                "file_id": "11PzwKNkD6JZA-OXFCNKxT0BW2Us0Ge7l",
+                "url": "https://drive.google.com/file/d/11PzwKNkD6JZA-OXFCNKxT0BW2Us0Ge7l/view",
+                "notes": "The Red Team RDR2 Main Pack"
+              },
+              {
+                "type": "gdrive",
+                "file_id": "1iiuK7C-o2Pp8tO3Y83JRPBc3y9DBquYP",
+                "url": "https://drive.google.com/file/d/1iiuK7C-o2Pp8tO3Y83JRPBc3y9DBquYP/view",
+                "notes": "The Red Team RDR2 Mirror 2"
+              }
+            ]
+          },
+          "install_rules": {
+            "type": "extract_and_copy",
+            "strip_components": 0,
+            "target_subdir": "game_data",
+            "backup_patterns": [
+              "game_data/strings.rpf"
+            ]
+          },
+          "is_active": true
+        }
+      ]
+    },
+    "resident_evil_4_remake": {
+      "id": "resident_evil_4_remake",
+      "canonical_title": "Resident Evil 4",
+      "aliases": [
+        "Resident Evil 4 Remake",
+        "RE4 Remake",
+        "Biohazard RE:4",
+        "RE4R"
+      ],
+      "steam_appid": 2050650,
+      "online_fix_ids": [
+        "resident-evil-4-remake",
+        "2050650"
+      ],
+      "translations": [
+        {
+          "id": "re4r_gamethuanviet",
+          "team": "Game Thuần Việt",
+          "team_url": "https://gamethuanviet.com/game/resident-evil-4-remake/",
+          "version": "1.2",
+          "game_version_min": "1.0",
+          "game_version_max": "",
+          "notes": "Viet hoa day du phu de, giao dien va DLC Separate Ways",
+          "download": {
+            "primary": {
+              "type": "direct",
+              "url": "https://gamethuanviet.com/game/resident-evil-4-remake/re4r_vi_v1.2.zip",
+              "sha256": "7c12de34fa56bc78de90fa12bc34de56fa78bc90de12fa34bc56de78fa90bc12",
+              "size_bytes": 165000000
+            },
+            "mirrors": []
+          },
+          "install_rules": {
+            "type": "extract_and_copy",
+            "strip_components": 0,
+            "target_subdir": "",
+            "backup_patterns": []
+          },
+          "is_active": true
+        }
+      ]
+    }
+  }
+}
