@@ -1,7 +1,7 @@
 {
   "$schema": "https://raw.githubusercontent.com/BobGameCenter/vietnamese-catalog/main/schema.json",
-  "version": 2,
-  "updated_at": "2026-11-08T02:20:00Z",
+  "version": 3,
+  "updated_at": "2026-11-08T13:08:52Z",
   "catalog": {
     "rimworld": {
       "id": "rimworld",
@@ -726,6 +726,84 @@
           },
           "is_active": true,
           "download_url": "https://gamethuanviet.com/game/resident-evil-4-remake/re4r_vi_v1.2.zip"
+        }
+      ]
+    },
+    "hi_fi_rush": {
+      "id": "hi_fi_rush",
+      "canonical_title": "Hi-Fi RUSH",
+      "aliases": [
+        "Hi fi Rush"
+      ],
+      "steam_appid": 1817230,
+      "online_fix_ids": [
+        "hi-fi-rush",
+        "1817230"
+      ],
+      "translations": [
+        {
+          "id": "hi_fi_rush_vietnd69",
+          "team": "vietnd69",
+          "team_url": "https://github.com/vietnd69/Hi-fi-Rush-Viet-Hoa",
+          "version": "1.0.0",
+          "game_version_min": "1.0",
+          "game_version_max": "",
+          "notes": "Bản Việt hóa của tựa game Hi-Fi RUSH AI translate",
+          "download_url": "https://github.com/vietnd69/Hi-fi-Rush-Viet-Hoa/releases/download/v1.0.0/HiFiRush_VietHoa_Pack_Full.zip",
+          "download": {
+            "primary": {
+              "type": "direct",
+              "url": "https://github.com/vietnd69/Hi-fi-Rush-Viet-Hoa/releases/download/v1.0.0/HiFiRush_VietHoa_Pack_Full.zip",
+              "sha256": "3c93ec7f391e2ab399a4fbbb4d262e8fd2010bb2d05dab01f42c7106f883d931",
+              "size_bytes": 74412817
+            },
+            "mirrors": []
+          },
+          "install_rules": {
+            "type": "extract_and_copy",
+            "strip_components": 1,
+            "target_subdir": "",
+            "backup_patterns": []
+          },
+          "is_active": true
+        }
+      ]
+    },
+    "outer_wilds": {
+      "id": "outer_wilds",
+      "canonical_title": "Outer Wilds",
+      "aliases": [],
+      "steam_appid": 753640,
+      "online_fix_ids": [
+        "outer-wilds",
+        "753640"
+      ],
+      "translations": [
+        {
+          "id": "outer_wilds_laluminescence",
+          "team": "laLuminescence",
+          "team_url": "https://github.com/laLuminescence/OuterWildsVietnamese",
+          "version": "1.0.4",
+          "game_version_min": "1.0",
+          "game_version_max": "",
+          "notes": "A Vietnamese Localization Mod for Outer Wilds",
+          "download_url": "https://github.com/laLuminescence/OuterWildsVietnamese/releases/download/v1.0.4/Luminescence.OuterWildsVietnamese.zip",
+          "download": {
+            "primary": {
+              "type": "direct",
+              "url": "https://github.com/laLuminescence/OuterWildsVietnamese/releases/download/v1.0.4/Luminescence.OuterWildsVietnamese.zip",
+              "sha256": "ebd13ee1b2d77607668e26571113ec156430ad364390006554be3ef8f86e4a8c",
+              "size_bytes": 1022080
+            },
+            "mirrors": []
+          },
+          "install_rules": {
+            "type": "extract_and_copy",
+            "strip_components": 0,
+            "target_subdir": "",
+            "backup_patterns": []
+          },
+          "is_active": true
         }
       ]
     }
