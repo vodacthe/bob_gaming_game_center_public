@@ -1,5 +1,7 @@
-## Có gì mới trong v1.4.2-rc3 (Release Candidate)
-
-- **Báo rõ trạng thái từ chối / lỗi gửi cho người gửi (BobDrop)**: Khi người nhận bấm Từ chối, hết thời gian chờ xác nhận hoặc phiên gửi gặp lỗi, màn hình người gửi nay cập nhật ngay thanh trạng thái đỏ, gắn nhãn màu `[BỊ TỪ CHỐI]` / `[THẤT BẠI]` trên dòng phiên truyền, đồng thời hiện hộp thoại báo rõ (hoặc bắn thông báo khay hệ thống khi đang thu nhỏ / gửi hàng loạt nhiều máy).
-- **Hỗ trợ gửi thư mục game lớn (> 2 GB & hàng chục nghìn tệp)**: Nâng giới hạn bản kê khai truyền lên 100.000 tệp (khung điều khiển 16 MB) và sửa lỗi tràn số 32-bit (`OverflowError`) khi quét dung lượng tệp/thư mục lớn hơn 2 GB. *(Lưu ý: Cả máy gửi và máy nhận cần cùng cập nhật lên v1.4.2-rc3 để truyền thư mục nhiều nghìn tệp).*
-- **Sửa lỗi quét mạng LAN / ZeroTier & Mũi tên QComboBox (từ RC2)**: Đồng bộ phát hiện thiết bị qua LAN/ZeroTier thực tế, tự cấu hình rule Windows Firewall `LocalSubnet` và thay mũi tên `QComboBox` bằng vector SVG.
+### Tính năng mới — Việt Hoá tự động 1-Click (Bản thử nghiệm RC)
+- **Huy hiệu Cờ Việt Nam (VN Badge):** Tự động nhận diện các tựa game có bản Việt Hoá trên cả **Online-Fix Store** và **Thư viện Game** (chế độ Lưới & Danh sách), hiển thị tag cờ đỏ sao vàng sắc nét đồng bộ với tag `HV`.
+- **Cài đặt & Gỡ Việt Hoá 1-Click trong Thư viện:** Bổ sung nút **Cài đặt Việt Hoá** ngay trên thẻ game có hỗ trợ:
+  - Tự động tải gói Việt Hoá (hỗ trợ GitHub Releases, Google Drive vượt xác nhận quét virus, Pixeldrain và mirror dự phòng), kiểm tra toàn vẹn `SHA-256`, tự nhận diện định dạng nén (`.zip`, `.rar`, `.7z`, `.pak`, ...) và chép thẳng vào đúng thư mục con của game mà không cần thao tác thủ công.
+  - Tự động sao lưu (backup) các tệp gốc trước khi ghi đè và hỗ trợ **Gỡ Việt Hoá** khôi phục nguyên trạng game bất kỳ lúc nào.
+  - Tự động dò tìm thư mục cài đặt game qua Steam (`libraryfolders.vdf` / `appmanifest_<appid>.acf`) kể cả khi game chưa chạy lần đầu.
+- **Danh mục Việt Hoá tích hợp sẵn (`v2`):** Bao gồm 16 tựa game đã xác thực mã băm `SHA-256` (RimWorld, Project Zomboid, State of Decay 2, Kingdom Come: Deliverance II, Black Myth: Wukong, Elden Ring, Red Dead Redemption 2, Grand Theft Auto V, The Witcher 3, Cyberpunk 2077, Valheim, Civilization VI, Cities: Skylines II, Dawn of Man, Subnautica: Below Zero, Resident Evil 4 Remake).
