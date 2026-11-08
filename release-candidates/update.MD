@@ -1,3 +1,7 @@
+### Sửa lỗi ở bản 1.4.3-rc2
+- **Khắc phục lỗi văng ứng dụng (`QThread` crash):** Sửa triệt để lỗi đóng ứng dụng đột ngột khi luồng kiểm tra trạng thái Cloud (`CloudCheckBatchWorker`) kết thúc đúng lúc giao diện đang nạp lại danh sách Thư viện game.
+- **Tối ưu tốc độ mở lại Thư viện khi hiện game Steam:** Bỏ qua bước quét đồng bộ tệp `.exe` trên luồng giao diện chính đối với các game Steam chính thức (vốn khởi chạy qua `steam://rungameid/<appid>`), loại bỏ hiện tượng khựng giao diện (~3.8 giây) khi tắt tùy chọn *Ẩn game Steam*.
+
 ### Tính năng mới — Việt Hoá tự động 1-Click (Bản thử nghiệm RC)
 - **Huy hiệu Cờ Việt Nam (VN Badge):** Tự động nhận diện các tựa game có bản Việt Hoá trên cả **Online-Fix Store** và **Thư viện Game** (chế độ Lưới & Danh sách), hiển thị tag cờ đỏ sao vàng sắc nét đồng bộ với tag `HV`.
 - **Cài đặt & Gỡ Việt Hoá 1-Click trong Thư viện:** Bổ sung nút **Cài đặt Việt Hoá** ngay trên thẻ game có hỗ trợ:
