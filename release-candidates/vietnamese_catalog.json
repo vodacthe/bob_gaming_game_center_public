@@ -1,7 +1,7 @@
 {
   "$schema": "https://raw.githubusercontent.com/BobGameCenter/vietnamese-catalog/main/schema.json",
-  "version": 3,
-  "updated_at": "2026-11-08T13:08:52Z",
+  "version": 4,
+  "updated_at": "2026-11-08T13:58:00Z",
   "catalog": {
     "rimworld": {
       "id": "rimworld",
@@ -429,7 +429,10 @@
       "aliases": [
         "Elden Ring",
         "Elden Ring Shadow of the Erdtree",
-        "ELDEN RING: Shadow of the Erdtree"
+        "ELDEN RING: Shadow of the Erdtree",
+        "ELDEN RING Shadow of the Erdtree Edition",
+        "Elden Ring: Shadow of the Erdtree Edition",
+        "Elden Ring Deluxe Edition"
       ],
       "steam_appid": 1245620,
       "online_fix_ids": [
@@ -441,36 +444,31 @@
           "id": "er_theredteam",
           "team": "The Red Team",
           "team_url": "https://theredteam.vn/elden-ring",
-          "version": "1.12",
+          "version": "1.16",
           "game_version_min": "1.10",
           "game_version_max": "",
-          "notes": "Goi font va msgbnd Viet ngu cua The Red Team ho tro DLC Shadow of the Erdtree",
+          "notes": "Goi font va msgbnd Viet ngu cua The Red Team ho tro DLC Shadow of the Erdtree (PC)",
           "download": {
             "primary": {
               "type": "gdrive",
-              "url": "https://drive.google.com/file/d/194Z80I4gRjfN722l8fE5uU-RkS-eFAnK/view",
-              "sha256": "efa267a1ef65f6eb9cd669b77afb655485f63ecb4048e443f14fab0ed1f152ab",
-              "size_bytes": 16973885
+              "url": "https://drive.google.com/file/d/19rIjkwQlkWdusL2XzVnnSC1j3mm4K4hx/view",
+              "sha256": "92a1d5314277be92c4c2acecad42cb36c3423ee3cd7cdb61793bee84f36d5dc1",
+              "size_bytes": 153388562
             },
-            "mirrors": [
-              {
-                "type": "gdrive",
-                "file_id": "1sdI0R_3fDD0CAHnyrGPMzZRTcPs3MDGG",
-                "url": "https://drive.google.com/file/d/1sdI0R_3fDD0CAHnyrGPMzZRTcPs3MDGG/view",
-                "notes": "Mirror Google Drive v1.10"
-              }
-            ]
+            "mirrors": []
           },
           "install_rules": {
             "type": "extract_and_copy",
-            "strip_components": 1,
-            "target_subdir": "Game",
+            "strip_components": 0,
+            "target_subdir": "",
             "backup_patterns": [
+              "Game/eldenring.exe",
               "Game/regulation.bin"
-            ]
+            ],
+            "archive_password": "Theredteam.vn"
           },
           "is_active": true,
-          "download_url": "https://drive.google.com/file/d/194Z80I4gRjfN722l8fE5uU-RkS-eFAnK/view"
+          "download_url": "https://drive.google.com/file/d/19rIjkwQlkWdusL2XzVnnSC1j3mm4K4hx/view"
         }
       ]
     },
@@ -574,6 +572,8 @@
       "id": "cyberpunk_2077",
       "canonical_title": "Cyberpunk 2077",
       "aliases": [
+        "Cyberpunk 2077: Ultimate Edition",
+        "Cyberpunk 2077 Ultimate Edition",
         "Cyberpunk 2077 Phantom Liberty",
         "Cyberpunk 2077: Phantom Liberty",
         "CP2077"
@@ -588,40 +588,27 @@
           "id": "cp2077_theredteam",
           "team": "The Red Team",
           "team_url": "https://theredteam.vn/cyberpunk-2077",
-          "version": "2.12",
+          "version": "2.2+",
           "game_version_min": "2.10",
           "game_version_max": "",
-          "notes": "Ho tro day du Cyberpunk 2077 va DLC Phantom Liberty (The Red Team)",
+          "notes": "Ho tro day du Cyberpunk 2077 Ultimate Edition va DLC Phantom Liberty (The Red Team PC)",
           "download": {
             "primary": {
               "type": "gdrive",
               "url": "https://drive.google.com/file/d/1BmOqSoKzeLhg8GL4odfq7iTwSRtycBus/view",
-              "sha256": "4b6c38e932b7811ef123456789abcdef0123456789abcdef0123456789abcdef",
-              "size_bytes": 142606336
+              "sha256": "9015be7698af21e81409be93ec9f65480feaf91cababf6f125d49ee2e8559b54",
+              "size_bytes": 85669002
             },
-            "mirrors": [
-              {
-                "type": "gdrive",
-                "file_id": "1GAV1pqYbo3oAx2X_JMlR3rLDdZaCPkEZ",
-                "url": "https://drive.google.com/file/d/1GAV1pqYbo3oAx2X_JMlR3rLDdZaCPkEZ/view",
-                "notes": "The Red Team Google Drive Mirror 2"
-              },
-              {
-                "type": "gdrive",
-                "file_id": "1wJuSi4WWVURstmeW9yfXL_0hFl8XCX02",
-                "url": "https://drive.google.com/file/d/1wJuSi4WWVURstmeW9yfXL_0hFl8XCX02/view",
-                "notes": "The Red Team Google Drive Mirror 3"
-              }
-            ]
+            "mirrors": []
           },
           "install_rules": {
             "type": "extract_and_copy",
             "strip_components": 0,
-            "target_subdir": "archive/pc/content",
+            "target_subdir": "",
             "backup_patterns": [
-              "archive/pc/content/lang_vi.archive",
-              "archive/pc/content/subtitles.dat"
-            ]
+              "archive/pc/mod/TheRedTeam.archive"
+            ],
+            "archive_password": "Theredteam.vn"
           },
           "is_active": true,
           "download_url": "https://drive.google.com/file/d/1BmOqSoKzeLhg8GL4odfq7iTwSRtycBus/view"
@@ -634,7 +621,9 @@
       "aliases": [
         "RDR2",
         "Red Dead 2",
-        "Red Dead Redemption II"
+        "Red Dead Redemption II",
+        "Red Dead Redemption 2: Ultimate Edition",
+        "Red Dead Redemption 2 Ultimate Edition"
       ],
       "steam_appid": 1174180,
       "online_fix_ids": [
@@ -650,71 +639,13 @@
           "version": "2.0",
           "game_version_min": "1.0",
           "game_version_max": "",
-          "notes": "Goi Viet ngu Red Dead Redemption 2 (The Red Team)",
+          "notes": "Goi Viet ngu Red Dead Redemption 2 PC (The Red Team)",
           "download": {
             "primary": {
               "type": "gdrive",
-              "url": "https://drive.google.com/file/d/1WwlRm5PagR4e8EzNU5pyXzgzANEqgBdb/view",
-              "sha256": "7f5215896add8832447daea65494a80b125d8336c32bfc902869519b81b52582",
-              "size_bytes": 1026645
-            },
-            "mirrors": [
-              {
-                "type": "gdrive",
-                "file_id": "11PzwKNkD6JZA-OXFCNKxT0BW2Us0Ge7l",
-                "url": "https://drive.google.com/file/d/11PzwKNkD6JZA-OXFCNKxT0BW2Us0Ge7l/view",
-                "notes": "The Red Team RDR2 Main Pack"
-              },
-              {
-                "type": "gdrive",
-                "file_id": "1iiuK7C-o2Pp8tO3Y83JRPBc3y9DBquYP",
-                "url": "https://drive.google.com/file/d/1iiuK7C-o2Pp8tO3Y83JRPBc3y9DBquYP/view",
-                "notes": "The Red Team RDR2 Mirror 2"
-              }
-            ]
-          },
-          "install_rules": {
-            "type": "extract_and_copy",
-            "strip_components": 0,
-            "target_subdir": "game_data",
-            "backup_patterns": [
-              "game_data/strings.rpf"
-            ]
-          },
-          "is_active": true,
-          "download_url": "https://drive.google.com/file/d/1WwlRm5PagR4e8EzNU5pyXzgzANEqgBdb/view"
-        }
-      ]
-    },
-    "resident_evil_4_remake": {
-      "id": "resident_evil_4_remake",
-      "canonical_title": "Resident Evil 4",
-      "aliases": [
-        "Resident Evil 4 Remake",
-        "RE4 Remake",
-        "Biohazard RE:4",
-        "RE4R"
-      ],
-      "steam_appid": 2050650,
-      "online_fix_ids": [
-        "resident-evil-4-remake",
-        "2050650"
-      ],
-      "translations": [
-        {
-          "id": "re4r_gamethuanviet",
-          "team": "Game Thuần Việt",
-          "team_url": "https://gamethuanviet.com/game/resident-evil-4-remake/",
-          "version": "1.2",
-          "game_version_min": "1.0",
-          "game_version_max": "",
-          "notes": "Viet hoa day du phu de, giao dien va DLC Separate Ways",
-          "download": {
-            "primary": {
-              "type": "direct",
-              "url": "https://gamethuanviet.com/game/resident-evil-4-remake/re4r_vi_v1.2.zip",
-              "sha256": "7c12de34fa56bc78de90fa12bc34de56fa78bc90de12fa34bc56de78fa90bc12",
-              "size_bytes": 165000000
+              "url": "https://drive.google.com/file/d/1iiuK7C-o2Pp8tO3Y83JRPBc3y9DBquYP/view",
+              "sha256": "",
+              "size_bytes": 1182341509
             },
             "mirrors": []
           },
@@ -722,10 +653,11 @@
             "type": "extract_and_copy",
             "strip_components": 0,
             "target_subdir": "",
-            "backup_patterns": []
+            "backup_patterns": [],
+            "archive_password": "Theredteam.vn"
           },
           "is_active": true,
-          "download_url": "https://gamethuanviet.com/game/resident-evil-4-remake/re4r_vi_v1.2.zip"
+          "download_url": "https://drive.google.com/file/d/1iiuK7C-o2Pp8tO3Y83JRPBc3y9DBquYP/view"
         }
       ]
     },
