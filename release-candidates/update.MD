@@ -1,5 +1,5 @@
-### Bản thử nghiệm v1.4.3-rc6 (RC)
-
-- **Steam Deck (AnkerGames Direct CDN)**: Hỗ trợ tự động nhận diện và giải Cloudflare Turnstile trên SteamOS / Linux với cả trình duyệt Flatpak lẫn cài trực tiếp (**Chrome**, **Edge**, **Brave**, **Chromium**, và **Firefox** qua WebDriver BiDi) trong cả Desktop Mode và Game Mode.
-- **Game Trainer (FLiNG)**: Tự động tải trước và lưu cache ảnh banner trainer xuống ổ cứng khi cài đặt hoặc mở xem, hiển thị tức thì mỗi lần mở lại mục Game Trainer mà không cần tải lại từ mạng.
-- **Cài đặt Steam Deck**: Sửa lỗi hiển thị dấu gạch dưới (`_Game Mode`) trên nút `Cài đặt biểu tượng & Game Mode`.
+### Sửa lỗi báo cài đặt thành công nhưng thư mục game trống (Windows & Steam Deck)
+- **Aria2 Downloader**: Loại bỏ lỗi nhận diện nhầm dòng `Status Legend: (OK):download completed.` khi `aria2c` kết thúc với mã lỗi (`retcode != 0`); chặn hoàn tất giả khi chỉ tải được metadata `.torrent` hoặc trang lỗi HTML của Cloudflare/CDN, đồng thời giữ nguyên `aria2_urls.txt` để bấm Tiếp tục tải lại.
+- **Game Extractor & FitGirl Repack**: Trên Steam Deck / Linux, tự động dò tìm Wine / Steam Proton và truyền đường dẫn Windows chuẩn `/DIR=Z:\...` cho `setup.exe` (khắc phục lỗi `setup.exe` ghi nhầm vào `~/.wine/drive_c/...` rồi dọn sạch tệp `.bin` khiến thư mục đích trống trơn).
+- **Bảo vệ dữ liệu tải về**: Kiểm tra bắt buộc có tệp dữ liệu game hợp lệ trong thư mục đích trước khi xóa tệp nén / tệp bộ cài `.bin` và trước khi đánh dấu hoàn tất (`COMPLETED`) hoặc thêm vào Thư viện; hỗ trợ giải nén định dạng chia nhỏ `.7z.001` / `.rar.001` / `.zip.001`.
+- **AnkerGames & Steam Deck**: Bổ sung tự động truyền Cookie từ phiên giải Turnstile (CDP / Firefox BiDi), đọc tên tệp từ `Content-Disposition` trên URL CDN, tự động cài đặt `7zz` tĩnh trong `install_deck.sh`, và sửa nút **Mở thư mục** trên Linux/SteamOS (`xdg-open`).
