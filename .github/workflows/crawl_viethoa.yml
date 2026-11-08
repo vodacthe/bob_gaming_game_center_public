@@ -1,0 +1,77 @@
+name: Sync Viet Hoa Catalog
+
+on:
+  schedule:
+    - cron: "0 */6 * * *"
+  workflow_dispatch:
+    inputs:
+      max_new:
+        description: "So luong game moi toi da moi lan quet"
+        required: false
+        default: "15"
+        type: string
+
+permissions:
+  contents: write
+
+concurrency:
+  group: viethoa-catalog-sync
+  cancel-in-progress: false
+
+jobs:
+  crawl-and-publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - name: Set up Python 3.12
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install archive & HTTP dependencies
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq p7zip-full
+          python -m pip install --quiet requests
+
+      - name: Crawl & validate Vietnamese game localizations
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          python scripts/crawl_viethoa.py \
+            --catalog vietnamese_catalog.json \
+            --mirror release-candidates/vietnamese_catalog.json \
+            --max-new "${{ inputs.max_new || '15' }}"
+
+      - name: Verify catalog schema integrity
+        run: |
+          python -c "
+          import json
+          for p in ('vietnamese_catalog.json', 'release-candidates/vietnamese_catalog.json'):
+              with open(p, encoding='utf-8') as f:
+                  data = json.load(f)
+              assert isinstance(data.get('version'), int) and data['version'] >= 1, f'Bad version in {p}'
+              cat = data.get('catalog')
+              assert isinstance(cat, dict) and len(cat) >= 16, f'Unexpectedly small catalog in {p}'
+          print(f'Verified {len(cat)} games at catalog v{data[\"version\"]}')
+          "
+
+      - name: Commit and push updated catalog to GitHub CDN
+        run: |
+          if git diff --quiet -- vietnamese_catalog.json release-candidates/vietnamese_catalog.json; then
+            echo "No catalog changes detected — skipping commit."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          VER=$(python -c "import json; print(json.load(open('vietnamese_catalog.json', encoding='utf-8'))['version'])")
+          CNT=$(python -c "import json; print(len(json.load(open('vietnamese_catalog.json', encoding='utf-8'))['catalog']))")
+          git add vietnamese_catalog.json release-candidates/vietnamese_catalog.json
+          git commit -m "chore(viethoa): auto-sync catalog v${VER} (${CNT} games)"
+          git pull --rebase origin main
+          git push origin HEAD:main

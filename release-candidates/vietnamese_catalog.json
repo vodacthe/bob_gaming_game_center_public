@@ -41,7 +41,8 @@
             "target_subdir": "",
             "backup_patterns": []
           },
-          "is_active": true
+          "is_active": true,
+          "download_url": "https://github.com/Ludeon/RimWorld-Vietnamese/releases/download/1.6.4871_2/Data.zip"
         }
       ]
     },
@@ -81,7 +82,8 @@
             "target_subdir": "",
             "backup_patterns": []
           },
-          "is_active": true
+          "is_active": true,
+          "download_url": "https://github.com/cackehoa/Project-Zomboid-viet-hoa/archive/c51d65add67921c3ddd750f57d69040ee1085e12.zip"
         }
       ]
     },
@@ -122,7 +124,8 @@
             "backup_patterns": [],
             "archive_password": "meviethoa.com"
           },
-          "is_active": true
+          "is_active": true,
+          "download_url": "https://drive.google.com/file/d/1J3fOtCkvw-30BUFeyC_othKKctpj-z7Q/view"
         }
       ]
     },
@@ -163,7 +166,8 @@
             "target_subdir": "",
             "backup_patterns": []
           },
-          "is_active": true
+          "is_active": true,
+          "download_url": "https://drive.google.com/file/d/1cN8s8R2R2s53fnbd7KKOUeH5MeVx179n/view"
         }
       ]
     },
@@ -203,7 +207,8 @@
             "target_subdir": "",
             "backup_patterns": []
           },
-          "is_active": true
+          "is_active": true,
+          "download_url": "https://github.com/monokaijs/valheim-viet-hoa/releases/download/main-latest/ValheimVietHoa-Mod-0.3.0.zip"
         }
       ]
     },
@@ -244,7 +249,8 @@
             "target_subdir": "DLC",
             "backup_patterns": []
           },
-          "is_active": true
+          "is_active": true,
+          "download_url": "https://github.com/game-viet-hoa/Civilization-VI-Viet-Hoa/archive/f2f4f151a5a173d420f02baa10c9cf1b662179dd.zip"
         }
       ]
     },
@@ -284,7 +290,8 @@
             "target_subdir": "BepInEx/plugins",
             "backup_patterns": []
           },
-          "is_active": true
+          "is_active": true,
+          "download_url": "https://github.com/lucthanca/cs2-vietnamese-localization/releases/download/v1.2.5f1/CSII.Vietnamese.Localization.zip"
         }
       ]
     },
@@ -321,7 +328,8 @@
             "target_subdir": "",
             "backup_patterns": []
           },
-          "is_active": true
+          "is_active": true,
+          "download_url": "https://github.com/cackehoa/Dawn-of-Man-viet-hoa/archive/347f482315a1ae62f092060bc5889090c41f4804.zip"
         }
       ]
     },
@@ -360,7 +368,8 @@
             "target_subdir": "SNAppData/SavedGames/LanguageFiles",
             "backup_patterns": []
           },
-          "is_active": true
+          "is_active": true,
+          "download_url": "https://github.com/HoangQuan2812/Subnautica-Below-Zero-Vietnamese-Translation/archive/5b7d4796b8aebf6fa6136f4b06f0c4bae8339be5.zip"
         }
       ]
     },
@@ -409,7 +418,8 @@
             "target_subdir": "b1/Content/Paks/~mods",
             "backup_patterns": []
           },
-          "is_active": true
+          "is_active": true,
+          "download_url": "https://drive.google.com/file/d/1BuX9NJYYuaHPNItf-zkyDTTumWnybGZS/pakchunk27-Windows_P.pak"
         }
       ]
     },
@@ -459,7 +469,8 @@
               "Game/regulation.bin"
             ]
           },
-          "is_active": true
+          "is_active": true,
+          "download_url": "https://drive.google.com/file/d/194Z80I4gRjfN722l8fE5uU-RkS-eFAnK/view"
         }
       ]
     },
@@ -504,7 +515,8 @@
               "x64/data/lang.rpf"
             ]
           },
-          "is_active": true
+          "is_active": true,
+          "download_url": "https://pixeldrain.com/api/file/uqFjWuss"
         }
       ]
     },
@@ -553,7 +565,8 @@
               "content/content0/strings.w3strings"
             ]
           },
-          "is_active": true
+          "is_active": true,
+          "download_url": "https://github.com/nguyenhoangnhviethoa/Viet-hoa-The-Witcher-3/releases/download/v1.5.4/VietHoa_Witcher3_v1.5.4.zip"
         }
       ]
     },
@@ -610,7 +623,8 @@
               "archive/pc/content/subtitles.dat"
             ]
           },
-          "is_active": true
+          "is_active": true,
+          "download_url": "https://drive.google.com/file/d/1BmOqSoKzeLhg8GL4odfq7iTwSRtycBus/view"
         }
       ]
     },
@@ -667,7 +681,8 @@
               "game_data/strings.rpf"
             ]
           },
-          "is_active": true
+          "is_active": true,
+          "download_url": "https://drive.google.com/file/d/1WwlRm5PagR4e8EzNU5pyXzgzANEqgBdb/view"
         }
       ]
     },
@@ -709,7 +724,8 @@
             "target_subdir": "",
             "backup_patterns": []
           },
-          "is_active": true
+          "is_active": true,
+          "download_url": "https://gamethuanviet.com/game/resident-evil-4-remake/re4r_vi_v1.2.zip"
         }
       ]
     }
