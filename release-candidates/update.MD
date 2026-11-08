@@ -1,5 +1,6 @@
-## Sửa lỗi treo Steam Deck khi bấm Chơi game vừa tải xong (v1.4.3-rc8)
+## Sửa lỗi giải nén FitGirl trên Windows & tối ưu giải nén bổ sung (v1.4.3-rc9)
 
-- **Chặn triệt để hiện tượng "Shutting down Steam..." làm đứng máy trên Steam Deck**: Khi chạy trong SteamOS Game Mode (`gamescope` / `SteamGamepadUI`) hoặc dưới dạng ứng dụng con của phiên Steam đang mở, Bob Game Center không còn tự gọi `steam -shutdown` / `pkill steam` để nạp lại `shortcuts.vdf`, tránh deadlock làm đóng băng toàn bộ phiên Gamescope.
-- **Khởi chạy trực tiếp qua Steam Proton ngay lập tức**: Các game vừa tải xong (cả game offline AnkerGames / SteamRIP / FitGirl lẫn game Online-Fix qua `start_game.sh`) được chạy ngay thông qua Proton (`proton waitforexitandrun`) với đúng `CompatToolMapping`, dùng chung thư mục save `steamapps/compatdata/<appid>` với shortcut Non-Steam, đồng thời làm sạch biến môi trường kế thừa (`SteamAppId`, `SteamGameId`, `gameoverlayrenderer.so`).
-- **Tự động dùng Non-Steam shortcut ở các lần mở máy sau**: Shortcut vẫn được ghi sẵn vào `shortcuts.vdf` để các phiên khởi động Steam tiếp theo nhận diện bình thường mà không cần khởi động lại máy ngay lúc vừa tải xong.
+- **Phát hiện tức thì khi Windows Security cách ly `setup.exe` của FitGirl**: Kiểm tra danh mục tệp trong gói `.rar` và phát hiện ngay nếu phần mềm diệt virus cách ly `setup.exe` sau khi giải nén (kèm hướng dẫn khôi phục / thêm thư mục vào Exclusions rõ ràng, không chạy phí thời gian giải nén tiếp các gói ngôn ngữ).
+- **Thử lại siêu tốc (không tải lại & không giải nén lại từ đầu)**: Khi bấm **Thử lại** trên tác vụ lỗi giải nén, ứng dụng bỏ qua bước quét lại máy chủ CDN và chỉ trích xuất đúng tệp `setup.exe` còn thiếu (~1 giây thay vì giải nén lại hàng chục GB tệp `.bin`).
+- **Chuyển thư mục tạm bộ cài FitGirl vào `<Game>\temp-fitgirl`**: Tránh đầy ổ `C:` khi bung nén game lớn và nằm gọn trong cùng một thư mục loại trừ của ổ chứa game.
+- **Tự động loại bỏ các gói lồng tiếng ngoại ngữ dư thừa (`fg-selective-*`) trên Direct CDN**: Chỉ giữ gói tiếng Anh và nội dung bonus, tiết kiệm 40–65 GB dung lượng tải cho các game đa ngôn ngữ như *Cyberpunk 2077*.
