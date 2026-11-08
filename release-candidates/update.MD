@@ -1,4 +1,3 @@
-### Cập nhật ở bản 1.4.3-rc3
-- **Chuyển nút Cài đặt / Gỡ Việt Hoá vào Chi tiết trò chơi**: Gỡ nút hành động Việt Hoá ở mặt trước thẻ game để thẻ gọn đẹp đúng bố cục gốc; toàn bộ nút **Cài đặt Việt Hoá**, **Cài đặt lại**, **Gỡ Việt Hoá (khôi phục file gốc)** và thanh tiến trình trực tiếp nằm gọn trong cửa sổ **Chi tiết trò chơi** khi click vào bất kỳ game nào trong Thư viện (hỗ trợ cả game Steam bản quyền lẫn game chưa kết nối Cloud).
-- **Hiển thị trạng thái kế bên Đã cài đặt**: Hiển thị trực tiếp `● Đã Việt Hoá` (hoặc `● Đang Việt Hoá XX%` khi đang tải/cài) nằm ngay kế bên `● Đã cài đặt` trên thẻ game và danh sách game.
-- **Tự động cập nhật danh mục nguồn Việt Hoá (OTA)**: Ứng dụng tự động đồng bộ `vietnamese_catalog.json` mới nhất từ máy chủ cập nhật ngầm khi khởi động và định kỳ mỗi 15 phút mà không cần chờ cập nhật lại file `.exe` (vẫn hoạt động offline bình thường với danh mục lưu đệm / tích hợp sẵn).
+### Sửa giao diện Huy hiệu Việt Hoá (1.4.3-rc4)
+- **Cờ đỏ sao vàng chuẩn**: Thay thế huy hiệu chữ `"VN"` viền vàng bằng **Cờ đỏ sao vàng** chuẩn vector SVG sắc nét (nền đỏ thẫm `#DA251D` + ngôi sao vàng 5 cánh `#FFFF00` chính giữa, tự động căn chỉnh độ phân giải HiDPI) trên toàn bộ Thư viện Game (Grid & List), cửa sổ Chi tiết trò chơi và Kho Game.
+- **Giữ nguyên cập nhật OTA danh sách Việt Hoá**: Tự động đồng bộ `vietnamese_catalog.json` mới nhất khi mở ứng dụng và định kỳ mỗi 15 phút.
