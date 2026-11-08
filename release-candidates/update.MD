@@ -1,4 +1,5 @@
-### Tự động đồng bộ Crawler Việt Hoá & Cờ đỏ sao vàng (1.4.3-rc5)
-- **Tương thích hoàn toàn với Crawler tự động trên GitHub Actions**: Hỗ trợ đầy đủ cả cấu trúc danh mục lồng nhau (`download.primary.url`) và phẳng (`download_url`) khi xác thực bản cập nhật OTA `vietnamese_catalog.json` từ CDN.
-- **Tự động cập nhật danh mục mới mỗi 6 giờ**: Máy chủ GitHub Actions tự động quét GitHub Releases & Steam Guides, kiểm định mã băm SHA-256 + cấu trúc gói nén và đẩy thẳng lên CDN để ứng dụng tự nhận game Việt Hoá mới.
-- **Giữ nguyên huy hiệu Cờ đỏ sao vàng sắc nét** trên toàn bộ Thư viện, Chi tiết trò chơi và Kho Game.
+### Bản thử nghiệm v1.4.3-rc6 (RC)
+
+- **Steam Deck (AnkerGames Direct CDN)**: Hỗ trợ tự động nhận diện và giải Cloudflare Turnstile trên SteamOS / Linux với cả trình duyệt Flatpak lẫn cài trực tiếp (**Chrome**, **Edge**, **Brave**, **Chromium**, và **Firefox** qua WebDriver BiDi) trong cả Desktop Mode và Game Mode.
+- **Game Trainer (FLiNG)**: Tự động tải trước và lưu cache ảnh banner trainer xuống ổ cứng khi cài đặt hoặc mở xem, hiển thị tức thì mỗi lần mở lại mục Game Trainer mà không cần tải lại từ mạng.
+- **Cài đặt Steam Deck**: Sửa lỗi hiển thị dấu gạch dưới (`_Game Mode`) trên nút `Cài đặt biểu tượng & Game Mode`.
