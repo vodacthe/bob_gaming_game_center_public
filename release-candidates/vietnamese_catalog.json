@@ -1,7 +1,7 @@
 {
   "$schema": "https://raw.githubusercontent.com/BobGameCenter/vietnamese-catalog/main/schema.json",
-  "version": 4,
-  "updated_at": "2026-11-08T13:58:00Z",
+  "version": 5,
+  "updated_at": "2026-11-08T14:12:00Z",
   "catalog": {
     "rimworld": {
       "id": "rimworld",
@@ -644,7 +644,7 @@
             "primary": {
               "type": "gdrive",
               "url": "https://drive.google.com/file/d/1iiuK7C-o2Pp8tO3Y83JRPBc3y9DBquYP/view",
-              "sha256": "",
+              "sha256": "895d94a4ddfbb92d74166483077be6d7bc7f78ea1e22fca56611c49a56a1ab83",
               "size_bytes": 1182341509
             },
             "mirrors": []
