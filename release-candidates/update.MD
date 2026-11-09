@@ -1,11 +1,9 @@
-## Tính năng mới trong v1.5.0
+## Tính năng mới trong v1.5.1
 
-- **Cài đặt Việt Hoá 1 chạm & Huy hiệu cờ Việt Nam**: Tích hợp hệ thống cài đặt/gỡ Việt Hoá tự động kèm sao lưu Write-Ahead Journal an toàn, huy hiệu cờ đỏ sao vàng trên thẻ game (Thư viện & Kho Game), và đồng bộ danh mục Việt Hoá OTA tự động từ máy chủ.
-- **Tự động cài Việt Hoá ngay khi tải game từ Kho Game**: Bổ sung tuỳ chọn *"Tự động cài Việt Hoá sau khi tải xong"* (mặc định bật cho các game có bản dịch) trong hộp thoại tải game; ngay khi giải nén/cài đặt game xong sẽ tự động chạy cài Việt Hoá ngầm và thông báo khi hoàn tất.
-- **Giải nén gói Việt Hoá PyInstaller / SFX đa nền tảng**: Tự động bóc tách dữ liệu bản dịch bên trong file `.exe` đóng gói PyInstaller/SFX (như các bản dịch của The Red Team cho Cyberpunk 2077, Elden Ring, Red Dead Redemption 2) mà không cần chạy `.exe`, hoạt động trên cả Windows và Steam Deck.
+- **Giả lập tay cầm Steam Controller (2015) sang Xbox 360 (XInput) tích hợp sẵn**: Kết nối và sử dụng trực tiếp tay cầm Valve Steam Controller (qua cáp USB, đầu thu không dây 2.4GHz và Bluetooth LE) như tay cầm Xbox 360 chuẩn cho mọi tựa game mà không cần bật Steam hay Steam Input, hỗ trợ tới 4 tay cầm đồng thời và tự cài đặt trình điều khiển ViGEmBus 1 chạm.
+- **Gán nút mặt lưng (LG / RG) đa chế độ - Ngắm Gyro & Điều khiển Chuột máy tính**: Hỗ trợ giữ nút mặt lưng để bật cảm biến chuyển động Gyro làm cần ngắm phải (RS) mượt mà, hoặc giữ nút để biến bàn rê phải thành chuột máy tính êm ái, bàn rê trái thành bánh xe cuộn trang, kèm chuột trái (RT / A) và chuột phải (LT / B).
+- **Phản hồi xúc giác Haptics & Tinh chỉnh chuyên sâu**: Bổ sung xung phản hồi xúc giác (Haptic Tick) trên cả hai bàn rê cảm ứng khi chạm/rê/cuộn, chuyển tiếp rung từ game XInput sang mạch Haptics, tự tắt Lizard Mode tránh nhảy chuột kép, nhận D-Pad trái khi nhấn vật lý và tùy chỉnh Deadzone, ngưỡng đạt 100% biên ngoài (90% -> 100%), độ nhạy bàn rê/chuột/Gyro.
 
 ## Sửa lỗi & Cải thiện ổn định
 
-- **Việt Hoá & SHA-256**: Cập nhật danh mục Việt Hoá v5 với mã băm SHA-256 chuẩn bản PC, mật khẩu giải nén và đường dẫn cài đặt chính xác; tự động ghi nhận cảnh báo và cho phép cài đặt khi nhóm dịch cập nhật bản mới làm đổi mã băm (vẫn chặn trang HTML lỗi/quota).
-- **Kho Game (FitGirl / AnkerGames / SteamRIP / Online-Fix)**: Phát hiện Windows Defender cách ly `setup.exe`, tự giải nén lại từng phần `.rar`, bỏ qua các gói lồng tiếng ngoại ngữ dư thừa khi tải FitGirl, ngăn báo hoàn tất giả khi thư mục đích trống, và hỗ trợ trình duyệt Flatpak/Firefox trên Steam Deck khi tải AnkerGames.
-- **Steam Deck & Game Trainer**: Khắc phục lỗi treo "Shutting down Steam" trong Game Mode khi khởi chạy game qua Proton, sửa lỗi hiển thị ký tự `&` trên nút cài biểu tượng Game Mode, và lưu bộ nhớ đệm ảnh bìa FLiNG Trainer trên ổ đĩa để mở tức thì.
+- **Kết nối không dây 2.4GHz & Giao diện Quản lý tay cầm**: Xử lý ổn định gói tin ngắn từ đầu thu không dây 2.4GHz giúp triệt tiêu hiện tượng giật nhảy cần phải/Gyro, cố định bố cục sơ đồ tay cầm không bị phóng to khi thông số Gyro thay đổi liên tục, và thêm huy hiệu trạng thái `[ON]` trực tiếp trên thanh bên.
