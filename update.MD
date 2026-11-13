@@ -1,8 +1,9 @@
-## Tính năng mới trong v1.6.3
+## Tính năng mới trong v1.6.4
 
-- **Tự động ẩn Steam Chat Overlay khi họp trực tuyến & chia sẻ màn hình**: Tự nhận diện các cuộc họp / trình chiếu đang diễn ra (Microsoft Teams, Google Meet, Zoom, Zalo Call, Webex, PowerPoint Slide Show...) để tạm ẩn khung chat, tắt âm báo, tạm dừng tự copy code và nhả phím tắt toàn cục; đồng thời loại trừ cửa sổ overlay khỏi luồng quay / chia sẻ màn hình trên Windows (`WDA_EXCLUDEFROMCAPTURE`) nhưng không ảnh hưởng tới Discord và game co-op.
-- **Tuỳ chọn Bật / Tắt biểu tượng Yahoo! Messenger**: Bổ sung công tắc bật / tắt hiển thị và hộp gợi ý biểu tượng cảm xúc Yahoo! Messenger trong cài đặt Steam Chat Overlay (mặc định bật), cập nhật trực tiếp ngay lập tức trên khung chat.
+- **Chơi game Android bằng tay cầm PC**: Mọi tay cầm cắm vào máy tính (Xbox, PlayStation, Switch, Steam Controller...) xuất hiện trong máy ảo Android như một tay cầm Xbox thật, tối đa 4 chiếc, dùng được với mọi game Android hỗ trợ tay cầm. Tay cầm chỉ điều khiển game khi màn hình Android đang mở; giữ **Back + Start** 1 giây để trả tay cầm về giao diện Bob Gaming, giữ lần nữa để quay lại game.
+- **Bàn phím + chuột giả lập tay cầm cho Android** (Windows): Bấm vào màn hình Android rồi bấm **F1** để bật / tắt chế độ chơi. Khi bật, WASD là cần trái, chuột xoay camera (cần phải), chuột trái / phải là RT / LT; khi tắt, bàn phím và chuột trở lại gõ chữ và chạm màn hình như cũ. Mọi phím đều gán lại được, có chỉnh độ nhạy chuột.
+- Nút **Tay cầm** mới trên thanh công cụ của màn hình Android để chọn chế độ (Tắt / Tay cầm / Phím + Chuột) và gán phím.
 
-## Cải thiện trải nghiệm
+## Sửa lỗi
 
-- **Tự động lưu cấu hình tức thì & phản hồi trực quan**: Mọi thay đổi trong **Steam Chat Overlay** và **Cài đặt hệ thống** đều tự động lưu và áp dụng ngay khi thao tác mà không cần bấm nút `Lưu`, kèm nhãn xác nhận **`Đã lưu cấu hình`** trực quan không chặn màn hình.
+- **Tự xoá file nén sau khi cài game Online-Fix**: Sửa lỗi file `.rar` tải về vẫn nằm lại trong thư mục game sau khi cài xong khi torrent đặt file nén trong một thư mục con. Các file nén của chính game (như gói dữ liệu `.zip`) không bị đụng tới.
