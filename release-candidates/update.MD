@@ -1,9 +1,9 @@
-## Tính năng mới trong v1.6.4
+## Sửa lỗi trong v1.6.5
 
-- **Chơi game Android bằng tay cầm PC**: Mọi tay cầm cắm vào máy tính (Xbox, PlayStation, Switch, Steam Controller...) xuất hiện trong máy ảo Android như một tay cầm Xbox thật, tối đa 4 chiếc, dùng được với mọi game Android hỗ trợ tay cầm. Tay cầm chỉ điều khiển game khi màn hình Android đang mở; giữ **Back + Start** 1 giây để trả tay cầm về giao diện Bob Gaming, giữ lần nữa để quay lại game.
-- **Bàn phím + chuột giả lập tay cầm cho Android** (Windows): Bấm vào màn hình Android rồi bấm **F1** để bật / tắt chế độ chơi. Khi bật, WASD là cần trái, chuột xoay camera (cần phải), chuột trái / phải là RT / LT; khi tắt, bàn phím và chuột trở lại gõ chữ và chạm màn hình như cũ. Mọi phím đều gán lại được, có chỉnh độ nhạy chuột.
-- Nút **Tay cầm** mới trên thanh công cụ của màn hình Android để chọn chế độ (Tắt / Tay cầm / Phím + Chuột) và gán phím.
+- **Cài game FitGirl không còn làm mất bản tải về**: Khi bộ cài FitGirl gặp lỗi giải nén (`Failed to start CLS-srep_x64.exe`, `Unarc.dll returned an error code: -11`), trước đây toàn bộ các tệp `.bin` vừa tải bị xoá theo. Nay bản repack được tạm chuyển ra ngoài thư mục game trong lúc cài, cài lỗi thì được trả về nguyên vẹn để thử lại mà không phải tải lại.
+- **Thư mục tạm của bộ cài FitGirl**: Bộ cài được chạy với thư mục tạm ngắn, không dấu cách và nằm ngoài thư mục game, tránh lỗi không khởi chạy được công cụ giải nén của repack.
+- **Mục "Có cập nhật" không còn gợi ý cho game bản quyền**: Game mua trên Steam, Epic, GOG, Xbox, EA, Ubisoft, Battle.net được tự động loại khỏi danh sách cập nhật của cửa hàng miễn phí, chỉ còn các game cài từ Online-Fix, FitGirl, SteamRIP, AnkerGames hoặc bản repack.
 
-## Sửa lỗi
+## Cải thiện
 
-- **Tự xoá file nén sau khi cài game Online-Fix**: Sửa lỗi file `.rar` tải về vẫn nằm lại trong thư mục game sau khi cài xong khi torrent đặt file nén trong một thư mục con. Các file nén của chính game (như gói dữ liệu `.zip`) không bị đụng tới.
+- **Không ghi rác vào thư mục Temp của Windows**: Tệp tạm của ứng dụng (tải bản cập nhật, driver ViGEmBus, đồng bộ save, LAN Drop, nhật ký máy ảo Android...) giờ chỉ nằm trong thư mục tải game (`.bobtemp`) hoặc thư mục `Bob Gaming\GameCenter`, và được dọn sau khi dùng xong.
