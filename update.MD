@@ -1,9 +1,4 @@
-## Sửa lỗi trong v1.6.5
+## Thay đổi trong v1.6.6
 
-- **Cài game FitGirl không còn làm mất bản tải về**: Khi bộ cài FitGirl gặp lỗi giải nén (`Failed to start CLS-srep_x64.exe`, `Unarc.dll returned an error code: -11`), trước đây toàn bộ các tệp `.bin` vừa tải bị xoá theo. Nay bản repack được tạm chuyển ra ngoài thư mục game trong lúc cài, cài lỗi thì được trả về nguyên vẹn để thử lại mà không phải tải lại.
-- **Thư mục tạm của bộ cài FitGirl**: Bộ cài được chạy với thư mục tạm ngắn, không dấu cách và nằm ngoài thư mục game, tránh lỗi không khởi chạy được công cụ giải nén của repack.
-- **Mục "Có cập nhật" không còn gợi ý cho game bản quyền**: Game mua trên Steam, Epic, GOG, Xbox, EA, Ubisoft, Battle.net được tự động loại khỏi danh sách cập nhật của cửa hàng miễn phí, chỉ còn các game cài từ Online-Fix, FitGirl, SteamRIP, AnkerGames hoặc bản repack.
-
-## Cải thiện
-
-- **Không ghi rác vào thư mục Temp của Windows**: Tệp tạm của ứng dụng (tải bản cập nhật, driver ViGEmBus, đồng bộ save, LAN Drop, nhật ký máy ảo Android...) giờ chỉ nằm trong thư mục tải game (`.bobtemp`) hoặc thư mục `Bob Gaming\GameCenter`, và được dọn sau khi dùng xong.
+- **Tắt toàn bộ thông báo khi ứng dụng đang active trên màn hình**: Tập trung hoá mọi luồng phát thông báo hệ thống (tray balloon và toast cảnh báo pin tay cầm) qua cổng kiểm soát thống nhất (`app/ui/notifications.py`). Thông báo bị chặn hoàn toàn khi cửa sổ ứng dụng đang hiển thị active trên màn hình (xử lý chính xác cả môi trường Steam Deck Game Mode), chỉ hiển thị khi ứng dụng thu nhỏ (minimized) hoặc ẩn xuống khay hệ thống (tray).
+- **Thêm mục Debug kiểm tra thông báo trong Cài đặt**: Bổ sung mục **Debug** → nút **Test notification** kèm nhãn trạng thái thời gian thực và tuỳ chọn ép hiện (**Buộc hiện khi test**).
