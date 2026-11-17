@@ -1,10 +1,8 @@
-## Thay đổi trong v1.6.7
+## Tính năng mới trong v1.6.8
 
-- **Sửa lỗi tải trực tiếp từ Buzzheavier (`app/core/online_fix/steamrip_client.py`):**
-  - Chặn hành vi `/download` trả `HTTP 204` kèm `HX-Redirect` trỏ ngược về chính trang chia sẻ (`bzzhr.to` / `buzzheavier.com`) qua `_is_buzzheavier_stream_url()`, không để `aria2c` tải nhầm trang HTML.
-  - Bổ sung bước phân giải 2 bước qua HTTP gắn `SSLContext` ép **TLS 1.3** (`_buzzheavier_tls_session()` + `_resolve_buzzheavier_via_tls13()`): truy cập trang chia sẻ với `Referer` SteamRIP để lấy nút tải có chữ ký thời gian `hx-get="/<id>/download?t=..."`, tên tệp `<title>` và dung lượng `.size`, sau đó lấy liên kết stream `ts.bzzhr.to/d/...` mà không cần mở trình duyệt.
-  - Giữ nguyên nhánh dự phòng Chromium CDP (`_resolve_buzzheavier_via_cdp()`) và thông báo lỗi tiếng Việt rõ ràng khi máy không có trình duyệt.
-- **Thêm hỗ trợ tải trực tiếp từ 1fichier (`app/core/online_fix/steamrip_client.py`, `app/core/online_fix/manager.py`):**
-  - Nhận diện liên kết `1fichier.com/?<id>` trên trang game SteamRIP, cung cấp tuỳ chọn `Tải Trực Tiếp (1fichier)` (qua `aria2c`) và `1fichier (Trình duyệt)`.
-  - Thêm `_resolve_1fichier()` hỗ trợ cả biểu mẫu 1fichier 2026 (không có trường ẩn `adz`, nút tải `a.ok` `"Start your download"`) lẫn biểu mẫu cũ, kèm thông báo tiếng Việt cho các trường hợp chờ giữa hai lượt tải miễn phí, tệp bị xoá hoặc có mật khẩu.
-  - Bổ sung cơ chế truyền tuỳ chọn `options` theo từng mục trong `aria2_urls.txt` (whitelist `split=1`, `max-connection-per-server=1` và chỉ nhận giá trị số) để tương thích với giới hạn 1 kết nối của 1fichier miễn phí.
+- **Ngăn máy tự ngủ khi đang tải và cài đặt game**: Giữ Steam Deck (cả Game Mode lẫn Desktop Mode) và máy tính không chuyển sang chế độ ngủ (Sleep / Suspend) hoặc tắt màn hình sớm trong suốt quá trình tải game lớn từ Kho Game, giải nén, chạy bộ cài repack, cài game/Runtime Android, thêm lối tắt Steam và cài Việt Hoá. Máy chỉ cho phép ngủ trở lại sau khi tất cả tác vụ tải và cài đặt đã hoàn tất.
+- **Tuỳ chọn trong Cài đặt hệ thống**: Bổ sung mục **"Giữ máy không ngủ khi đang tải và cài đặt game"** (mặc định bật) trong phần Cài đặt hệ thống để người dùng chủ động bật/tắt ngay lập tức mà không cần khởi động lại ứng dụng.
+
+## Cải thiện kỹ thuật
+
+- **Tương thích đa nền tảng**: Hỗ trợ đồng thời SteamOS/Linux (`systemd-inhibit`, `org.freedesktop.login1`, `org.freedesktop.ScreenSaver`, `PowerManagement.Inhibit` và X11/XWayland `XScreenSaverSuspend`), Windows (`SetThreadExecutionState` trên luồng định danh cố định) và macOS (`caffeinate`), tự động giải phóng khóa nguồn ngay cả khi tiến trình kết thúc đột ngột.
