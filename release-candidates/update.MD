@@ -1,8 +1,11 @@
-## Tính năng mới trong v1.6.8
+## Tính năng mới trong v1.6.9
 
-- **Ngăn máy tự ngủ khi đang tải và cài đặt game**: Giữ Steam Deck (cả Game Mode lẫn Desktop Mode) và máy tính không chuyển sang chế độ ngủ (Sleep / Suspend) hoặc tắt màn hình sớm trong suốt quá trình tải game lớn từ Kho Game, giải nén, chạy bộ cài repack, cài game/Runtime Android, thêm lối tắt Steam và cài Việt Hoá. Máy chỉ cho phép ngủ trở lại sau khi tất cả tác vụ tải và cài đặt đã hoàn tất.
-- **Tuỳ chọn trong Cài đặt hệ thống**: Bổ sung mục **"Giữ máy không ngủ khi đang tải và cài đặt game"** (mặc định bật) trong phần Cài đặt hệ thống để người dùng chủ động bật/tắt ngay lập tức mà không cần khởi động lại ứng dụng.
+- **Tự động dò tìm vị trí lưu game (Auto Save Location) trên Windows và Steam Deck / SteamOS**: Thay thế thao tác mở tìm kiếm Google thủ công bằng hệ thống tự động nhận diện thư mục save cho hơn **20.100 trò chơi** ngay trong ứng dụng.
+- **Hỗ trợ đầy đủ SteamOS / Proton & thẻ nhớ microSD**: Tự động quét các tiền tố Proton (`compatdata/<appid>/pfx`, `<thư mục game>/compatdata/pfx`), đường dẫn thư viện phụ trong `libraryfolders.vdf` (gồm cả thẻ nhớ microSD trên Steam Deck), `shortcuts.vdf` và đường dẫn Linux gốc (`XDG_DATA_HOME` / `XDG_CONFIG_HOME`).
+- **Tự động nhận diện Online-Fix, Steam Emulator & Game Engine**: Hỗ trợ dò save cho `Online-Fix`, `Goldberg / GSE Saves`, `RUNE`, `CODEX`, `FLT`, `EMPRESS`, `SmartSteamEmu`, `Steam userdata` cùng cơ chế phân tích engine (`Unity`, `Unreal Engine`, `Ren'Py`, `RPG Maker`).
+- **Đồng bộ Cloud xuyên nền tảng (Windows <-> Steam Deck)**: Tự động chuyển đổi đường dẫn lưu game giữa Windows và SteamOS Proton khi tải bản lưu từ Cloud về máy mới, đồng thời tự tạo sẵn thư mục lưu game ngay cả khi chưa khởi chạy game lần đầu.
+- **Chọn nhanh khi có nhiều vị trí lưu hợp lệ**: Tự động ưu tiên thư mục chứa bản lưu mới nhất khi quét nền, hoặc hiển thị hộp thoại chọn thư mục kèm số tệp và thời gian cập nhật khi người dùng bấm **"Tự động tìm vị trí save"**.
 
 ## Cải thiện kỹ thuật
 
-- **Tương thích đa nền tảng**: Hỗ trợ đồng thời SteamOS/Linux (`systemd-inhibit`, `org.freedesktop.login1`, `org.freedesktop.ScreenSaver`, `PowerManagement.Inhibit` và X11/XWayland `XScreenSaverSuspend`), Windows (`SetThreadExecutionState` trên luồng định danh cố định) và macOS (`caffeinate`), tự động giải phóng khóa nguồn ngay cả khi tiến trình kết thúc đột ngột.
+- **Cập nhật cơ sở dữ liệu Save tự động (OTA)**: Tích hợp sẵn cơ sở dữ liệu nén ngoại tuyến (`save_locations_db.json.gz`) và tự động đồng bộ bản cập nhật mới trong tiến trình nền mà không làm khựng giao diện.
