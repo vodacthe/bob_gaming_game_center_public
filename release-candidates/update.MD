@@ -1,10 +1,10 @@
-## Tính năng mới trong v1.7.0
+## Tính năng mới trong v1.7.1
 
-- **Ghép màn hình (Triple Screen không cần Eyefinity / NVIDIA Surround)**: Bổ sung mục **Ghép màn hình** trong nhóm **Công cụ nâng cao**, cho phép chạy trò chơi tràn 2 hoặc 3+ màn hình không viền trực tiếp qua Win32 mà không cần gộp màn hình ở tầng driver.
-- **Tích hợp sẵn Euro Truck Simulator 2 & American Truck Simulator + mọi game tùy chỉnh**: Tự động dò đường dẫn `.exe` cho **ETS 2** và **ATS**, hỗ trợ chọn tệp `.exe` bất kỳ để chạy ngay, bật theo dõi tự động ngầm (`[ON]`) hoặc bấm **Ghép ngay** kèm sơ đồ chọn màn hình trực quan.
-- **Tương thích hoàn toàn với Lossless Scaling (LSFG3 / FSR) trên nhiều màn hình**: Tự động can thiệp bộ nhớ tiến trình `LosslessScaling.exe` (W^X in-memory IAT hook, không ghi đè tệp lên ổ đĩa) giúp khung hình bù `LSFG3` và upscale `FSR` trải đều toàn bộ cụm màn hình ghép thay vì nhảy co về 1 màn hình.
+- **Chuyển đổi ngôn ngữ ứng dụng (English / Tiếng Việt) kèm biểu tượng lá cờ**: Bổ sung mục **Ngôn ngữ hiển thị** ở đầu phần **Cài đặt hệ thống** (và hộp thoại Cài đặt nhanh) với cờ Vương quốc Anh (`English`) và cờ Việt Nam (`Tiếng Việt`).
+- **Đổi ngôn ngữ trực tiếp (Live Switch) không cần khởi động lại**: Toàn bộ giao diện chính, thanh điều hướng, Kho Game, Kho Game Android, các bộ lọc thể loại, thẻ game, hộp thoại thông báo và khung **Steam Chat Overlay** (bao gồm danh sách gợi ý lệnh `/...`) tự động chuyển ngôn ngữ ngay lập tức mà không làm gián đoạn quá trình tải game hay stream đang chạy.
+- **Tự động chọn ngôn ngữ mặc định thông minh**: Máy cài đặt mới lần đầu mặc định sử dụng **English** (và khi Khôi phục cài đặt gốc), trong khi các máy đã cài đặt và sử dụng ứng dụng từ trước tự động giữ nguyên **Tiếng Việt**.
 
 ## Cải thiện kỹ thuật & Sửa lỗi
 
-- **Sửa lỗi phím tắt `Ctrl+Enter` của Steam Chat Overlay trong game DirectInput8 / Triple Screen**: Bổ sung low-level hook dự phòng và đồng bộ phím bổ trợ vật lý (`Ctrl`/`Shift`/`Alt`), khắc phục tình trạng engine Prism3D (ETS 2, ATS...) chặn `WM_HOTKEY` khiến không mở/đóng được khung nhập chat trong game.
-- **Khởi chạy `.exe` chuẩn quyền người dùng & phát hiện khóa màn hình**: Tự động chạy `.exe` qua token desktop Explorer tránh lỗi xung đột quyền với Steam, đồng thời tự động phát hiện và cảnh báo khi game khóa cứng chế độ Fullscreen/Borderless 1 màn hình.
+- **Bảo toàn tên trò chơi gốc & chuẩn phím tắt Qt**: Giữ nguyên tên riêng của trò chơi trong Thư viện và Kho Game khi chuyển đổi ngôn ngữ, đồng thời chuẩn hóa ký tự `&` trên nút bấm/tab để không sinh gạch chân phím tắt ngoài ý muốn.
+- **Đồng bộ ngôn ngữ truy vấn Kho Game Android**: Tự động đồng bộ tham số ngôn ngữ khi tìm kiếm danh mục trên Google Play theo ngôn ngữ hiển thị đang chọn.
