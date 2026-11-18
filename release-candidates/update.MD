@@ -1,6 +1,5 @@
-## Sửa lỗi & Cải thiện trong v1.7.2
+## Sửa lỗi & Cải thiện trong v1.7.3
 
-- **Sửa lỗi Steam Chat Overlay kẹt "Cần khởi động lại Steam để kết nối"**: Tự động phát hiện khi cổng mặc định `8080` nằm trong dải TCP bị Windows / Hyper-V giữ sẵn (`WSAEACCES` / `10013`) hoặc bị ứng dụng khác chiếm, tự chuyển CEF DevTools của Steam sang cổng dự phòng (`27062`, `27063`, `38080`, `48080`) qua cờ `-cef-enable-debugging -devtools-port` khi bấm **Khởi động lại Steam**.
-- **Tự dò cổng CEF dự phòng & đánh thức kết nối tức thì**: Bộ dò kết nối (`steam_debug.probe`) tự động kiểm tra cổng dự phòng đang lắng nghe và log `logs/webhelper.txt` của Steam, đồng thời đánh thức vòng lặp kết nối ngay sau khi Steam khởi động lại hoặc bấm kiểm tra lại.
-- **Khởi động lại Steam an toàn khi ứng dụng chạy quyền Administrator**: Đợi và dọn dẹp tiến trình con `steamwebhelper.exe` còn kẹt trước khi mở lại Steam, đồng thời ưu tiên khởi chạy `steam.exe` ở quyền người dùng thường qua Desktop Shell để không gây cảnh báo nâng quyền của Steam.
-- **Chống nhảy cấu hình khi lăn chuột cuộn trang cài đặt**: Chặn con lăn chuột vô tình đổi giá trị các ô chọn / ô số (`Tin nhắn hiện lên`, `Độ rộng khung`, ngôn ngữ, kênh cập nhật...) khi cuộn trang cài đặt, đồng thời hiển thị nhắc rõ trên thanh nhập chat khi đang bật chế độ chỉ hiện `@tag` (`/quiet`).
+- **Chỉ báo cập nhật game theo đúng nguồn đã tải**: Kho Game lưu lại chính xác nguồn tải ban đầu của từng game (`Online-Fix.me`, `AnkerGames`, `FitGirl Repacks`, `SteamRIP`) và tự khôi phục nguồn cho các game đã cài trước đó từ lịch sử tải / thông tin nguồn. Thông báo **Có cập nhật** chỉ hiển thị khi chính nguồn đã tải tung bản cập nhật mới hơn (không còn báo nhầm khi kho khác đăng sau hoặc với shortcut / game thêm ngoài).
+- **Tự chọn sẵn đúng tab nguồn khi mở game đã cài**: Khi bấm vào thẻ game đã cài đặt hoặc có bản cập nhật ở chế độ **Tất cả**, hộp thoại chi tiết tự mở sẵn tab nguồn mà bạn đã tải game đó.
+- **Sửa lỗi chữ và thẻ game đè lên nhau trong Kho Game**: Làm mới bố cục `FlowLayout` ngay khi thêm/bớt thẻ qua từng đợt tìm kiếm bất đồng bộ đa nguồn, khắc phục triệt để lỗi hai thẻ game chồng lên cùng một vị trí làm nhòe chữ tiêu đề.
