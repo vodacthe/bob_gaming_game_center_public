@@ -1,10 +1,5 @@
-## Tính năng mới trong v1.7.1
+## Sửa lỗi & Cải thiện trong v1.7.2
 
-- **Chuyển đổi ngôn ngữ ứng dụng (English / Tiếng Việt) kèm biểu tượng lá cờ**: Bổ sung mục **Ngôn ngữ hiển thị** ở đầu phần **Cài đặt hệ thống** (và hộp thoại Cài đặt nhanh) với cờ Vương quốc Anh (`English`) và cờ Việt Nam (`Tiếng Việt`).
-- **Đổi ngôn ngữ trực tiếp (Live Switch) không cần khởi động lại**: Toàn bộ giao diện chính, thanh điều hướng, Kho Game, Kho Game Android, các bộ lọc thể loại, thẻ game, hộp thoại thông báo và khung **Steam Chat Overlay** (bao gồm danh sách gợi ý lệnh `/...`) tự động chuyển ngôn ngữ ngay lập tức mà không làm gián đoạn quá trình tải game hay stream đang chạy.
-- **Tự động chọn ngôn ngữ mặc định thông minh**: Máy cài đặt mới lần đầu mặc định sử dụng **English** (và khi Khôi phục cài đặt gốc), trong khi các máy đã cài đặt và sử dụng ứng dụng từ trước tự động giữ nguyên **Tiếng Việt**.
-
-## Cải thiện kỹ thuật & Sửa lỗi
-
-- **Bảo toàn tên trò chơi gốc & chuẩn phím tắt Qt**: Giữ nguyên tên riêng của trò chơi trong Thư viện và Kho Game khi chuyển đổi ngôn ngữ, đồng thời chuẩn hóa ký tự `&` trên nút bấm/tab để không sinh gạch chân phím tắt ngoài ý muốn.
-- **Đồng bộ ngôn ngữ truy vấn Kho Game Android**: Tự động đồng bộ tham số ngôn ngữ khi tìm kiếm danh mục trên Google Play theo ngôn ngữ hiển thị đang chọn.
+- **Sửa lỗi Steam Chat Overlay kẹt "Cần khởi động lại Steam để kết nối"**: Tự động phát hiện khi cổng mặc định `8080` nằm trong dải TCP bị Windows / Hyper-V giữ sẵn (`WSAEACCES` / `10013`) hoặc bị ứng dụng khác chiếm, tự chuyển CEF DevTools của Steam sang cổng dự phòng (`27062`, `27063`, `38080`, `48080`) qua cờ `-cef-enable-debugging -devtools-port` khi bấm **Khởi động lại Steam**.
+- **Tự dò cổng CEF dự phòng & đánh thức kết nối tức thì**: Bộ dò kết nối (`steam_debug.probe`) tự động kiểm tra cổng dự phòng đang lắng nghe và log `logs/webhelper.txt` của Steam, đồng thời đánh thức vòng lặp kết nối ngay sau khi Steam khởi động lại hoặc bấm kiểm tra lại.
+- **Khởi động lại Steam an toàn khi ứng dụng chạy quyền Administrator**: Đợi và dọn dẹp tiến trình con `steamwebhelper.exe` còn kẹt trước khi mở lại Steam, đồng thời ưu tiên khởi chạy `steam.exe` ở quyền người dùng thường qua Desktop Shell để không gây cảnh báo nâng quyền của Steam.
