@@ -1,7 +1,7 @@
 {
   "$schema": "https://raw.githubusercontent.com/BobGameCenter/vietnamese-catalog/main/schema.json",
-  "version": 5,
-  "updated_at": "2026-11-08T14:12:00Z",
+  "version": 6,
+  "updated_at": "2026-11-21T19:00:06Z",
   "catalog": {
     "rimworld": {
       "id": "rimworld",
@@ -732,6 +732,82 @@
           "install_rules": {
             "type": "extract_and_copy",
             "strip_components": 0,
+            "target_subdir": "",
+            "backup_patterns": []
+          },
+          "is_active": true
+        }
+      ]
+    },
+    "mark_of_the_deep": {
+      "id": "mark_of_the_deep",
+      "canonical_title": "Mark of the Deep",
+      "aliases": [],
+      "steam_appid": 1933370,
+      "online_fix_ids": [
+        "mark-of-the-deep",
+        "1933370"
+      ],
+      "translations": [
+        {
+          "id": "mark_of_the_deep_diiexe",
+          "team": "diiexe",
+          "team_url": "https://github.com/diiexe/Mark-of-the-Deep-Viet-Hoa",
+          "version": "1.0.0",
+          "game_version_min": "1.0",
+          "game_version_max": "",
+          "notes": "Ban Viet Hoa tu GitHub (diiexe/Mark-of-the-Deep-Viet-Hoa)",
+          "download_url": "https://github.com/diiexe/Mark-of-the-Deep-Viet-Hoa/releases/download/v1.0.0/MarkOfTheDeep_VietHoa_v1.0.0.zip",
+          "download": {
+            "primary": {
+              "type": "direct",
+              "url": "https://github.com/diiexe/Mark-of-the-Deep-Viet-Hoa/releases/download/v1.0.0/MarkOfTheDeep_VietHoa_v1.0.0.zip",
+              "sha256": "40fa488f29ba30f37288afbf40f4e2e38733c3adfe11d05aca1e953e15b75d2f",
+              "size_bytes": 1505718
+            },
+            "mirrors": []
+          },
+          "install_rules": {
+            "type": "extract_and_copy",
+            "strip_components": 0,
+            "target_subdir": "",
+            "backup_patterns": []
+          },
+          "is_active": true
+        }
+      ]
+    },
+    "flotsam": {
+      "id": "flotsam",
+      "canonical_title": "Flotsam",
+      "aliases": [],
+      "steam_appid": 821250,
+      "online_fix_ids": [
+        "flotsam",
+        "821250"
+      ],
+      "translations": [
+        {
+          "id": "flotsam_diiexe",
+          "team": "diiexe",
+          "team_url": "https://github.com/diiexe/Flotsam-Viet-Hoa",
+          "version": "1.0.0",
+          "game_version_min": "1.0",
+          "game_version_max": "",
+          "notes": "Ban Viet Hoa tu GitHub (diiexe/Flotsam-Viet-Hoa)",
+          "download_url": "https://github.com/diiexe/Flotsam-Viet-Hoa/releases/download/v1.0.0/Flotsam_VietHoa_v1.0.0.zip",
+          "download": {
+            "primary": {
+              "type": "direct",
+              "url": "https://github.com/diiexe/Flotsam-Viet-Hoa/releases/download/v1.0.0/Flotsam_VietHoa_v1.0.0.zip",
+              "sha256": "04de4f26a1a1801e642d0d6b538b729c4d497ec877940934cc2bb159ab895ade",
+              "size_bytes": 85204793
+            },
+            "mirrors": []
+          },
+          "install_rules": {
+            "type": "extract_and_copy",
+            "strip_components": 1,
             "target_subdir": "",
             "backup_patterns": []
           },
