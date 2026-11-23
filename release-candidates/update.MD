@@ -1,5 +1,8 @@
-## Sửa lỗi & Cải thiện trong v1.7.4
+## Bản thử nghiệm RC (v1.7.5-rc1)
 
-- **Sửa lỗi lấy nhầm ảnh bìa của bản game khác khi thêm Non-Steam (ví dụ EA SPORTS FC 27 lấy ảnh FC 24)**: Bắt buộc đối chiếu khớp tên game nghiêm ngặt trên cả SteamGridDB và Steam Store, không bao giờ tự lấy kết quả đầu tiên khác năm/phiên bản.
-- **Hỗ trợ tải đầy đủ 5 loại ảnh bìa có SHA1 hash từ Steam CDN mới**: Bổ sung giải pháp lấy trực tiếp Poster, Grid, Hero, Logo và Icon từ hệ thống CDN mới của Steam (IStoreBrowseService & library_assets_full) cho các tựa game phát hành mới chưa có trên SteamGridDB, đồng thời tự dọn ảnh cũ bị lệch khi đồng bộ lại.
-- **Thông báo rõ khi AnkerGames chặn tải trực tiếp ngoài trình duyệt**: Ghi nhận lý do từ máy chủ AnkerGames khi trả về HTTP 403 và hướng dẫn mở tải qua nút **AnkerGames (Trình duyệt)**.
+- **Thêm mục Thư viện Runtime (Cài VC++ / DirectX / .NET / OpenAL vào Proton Prefix cho Steam Deck & Windows)**:
+  - Sửa lỗi thiếu *Microsoft Visual C++ Runtime* khi mở các game Unreal Engine 4/5 Non-Steam trên Steam Deck (ví dụ Phantom Blade Zero).
+  - Tự động phát hiện trạng thái đã cài / chưa cài trong từng Proton Prefix (compatdata/<appid>/pfx), hỗ trợ 1 chạm **Cài gói khuyến nghị (VC++ 2015–2022 x64/x86 + DirectX Jun 2010)**.
+  - Tự quét các bộ cài đi kèm trong thư mục game (UEPrereqSetup_x64.exe, _CommonRedist, DXSETUP.exe) và hỗ trợ chạy bất kỳ file .exe/.msi nào trực tiếp vào Prefix của game.
+  - Mở nhanh từ Sidebar (**Thư viện Runtime**) hoặc bấm ... trên từng thẻ game → **Cài thư viện Runtime (VC++ / DirectX)...**.
+- **Tự động cài sẵn Visual C++ 2015–2022 (x64) trên SteamOS** khi thêm game Non-Steam mới vào Steam.
