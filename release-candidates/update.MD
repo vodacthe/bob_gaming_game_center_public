@@ -1,5 +1,5 @@
-## Sửa lỗi & Cải thiện trong v1.7.3
+## Sửa lỗi & Cải thiện trong v1.7.4
 
-- **Chỉ báo cập nhật game theo đúng nguồn đã tải**: Kho Game lưu lại chính xác nguồn tải ban đầu của từng game (`Online-Fix.me`, `AnkerGames`, `FitGirl Repacks`, `SteamRIP`) và tự khôi phục nguồn cho các game đã cài trước đó từ lịch sử tải / thông tin nguồn. Thông báo **Có cập nhật** chỉ hiển thị khi chính nguồn đã tải tung bản cập nhật mới hơn (không còn báo nhầm khi kho khác đăng sau hoặc với shortcut / game thêm ngoài).
-- **Tự chọn sẵn đúng tab nguồn khi mở game đã cài**: Khi bấm vào thẻ game đã cài đặt hoặc có bản cập nhật ở chế độ **Tất cả**, hộp thoại chi tiết tự mở sẵn tab nguồn mà bạn đã tải game đó.
-- **Sửa lỗi chữ và thẻ game đè lên nhau trong Kho Game**: Làm mới bố cục `FlowLayout` ngay khi thêm/bớt thẻ qua từng đợt tìm kiếm bất đồng bộ đa nguồn, khắc phục triệt để lỗi hai thẻ game chồng lên cùng một vị trí làm nhòe chữ tiêu đề.
+- **Sửa lỗi lấy nhầm ảnh bìa của bản game khác khi thêm Non-Steam (ví dụ EA SPORTS FC 27 lấy ảnh FC 24)**: Bắt buộc đối chiếu khớp tên game nghiêm ngặt trên cả SteamGridDB và Steam Store, không bao giờ tự lấy kết quả đầu tiên khác năm/phiên bản.
+- **Hỗ trợ tải đầy đủ 5 loại ảnh bìa có SHA1 hash từ Steam CDN mới**: Bổ sung giải pháp lấy trực tiếp Poster, Grid, Hero, Logo và Icon từ hệ thống CDN mới của Steam (IStoreBrowseService & library_assets_full) cho các tựa game phát hành mới chưa có trên SteamGridDB, đồng thời tự dọn ảnh cũ bị lệch khi đồng bộ lại.
+- **Thông báo rõ khi AnkerGames chặn tải trực tiếp ngoài trình duyệt**: Ghi nhận lý do từ máy chủ AnkerGames khi trả về HTTP 403 và hướng dẫn mở tải qua nút **AnkerGames (Trình duyệt)**.
