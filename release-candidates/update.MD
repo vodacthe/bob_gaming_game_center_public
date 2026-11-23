@@ -1,7 +1,9 @@
-## Bản thử nghiệm RC (v1.7.5-rc2)
+## Bản thử nghiệm RC (v1.7.5-rc3)
 
-- **Sửa lỗi tự động khởi động cùng SteamOS trên Steam Deck (hỗ trợ cả Game Mode & Desktop Mode)**:
-  - Triển khai đầy đủ set_auto_start cho SteamOS/Linux thay vì chỉ gọi Windows Task Scheduler: tự tạo và kích hoạt systemd --user service (~/.config/systemd/user/bob-game-center.service) cho Game Mode lẫn Desktop Mode và tệp XDG Autostart (~/.config/autostart/bob_game_center.desktop) cho KDE Plasma.
-  - Bộ khởi chạy ob_game_center.sh --autostart tự chờ display socket (gamescope / wayland / XWayland) sẵn sàng khi Steam Deck vừa boot, tránh lỗi không kết nối được màn hình.
-  - Bảo vệ chạy 1 phiên bản khi tự khởi động (--autostart) để không đè lên cửa sổ người dùng đang mở và cấu hình SuccessExitStatus=0 143 SIGTERM để không bị vòng lặp khởi động lại.
-- **Bao gồm tính năng Thư viện Runtime từ RC1**: cài Microsoft Visual C++ 2015–2022 (x64/x86), DirectX Jun 2010, .NET, OpenAL và bộ cài đi kèm (UEPrereqSetup_x64.exe) thẳng vào Proton Prefix của game.
+- **Sửa lỗi mở nhiều cửa sổ / nhiều instance cùng lúc trên SteamOS**:
+  - Dùng khóa nhân hệ điều hành POSIX lock (pp.lock) chống race-condition khi bấm liên tiếp nhiều lần vào icon ứng dụng.
+  - Khi ứng dụng đang chạy (hoặc chạy ẩn sau khi tự khởi động), bấm icon lại sẽ gửi tín hiệu qua Unix socket (QLocalServer) để bật cửa sổ hiện có lên trước ngay lập tức — giữ nguyên các tác vụ tải game / chat đang chạy.
+  - Nếu tiến trình cũ bị treo hoặc không phản hồi (kể cả khi SDL2 chặn SIGTERM), tự leo thang SIGTERM -> SIGKILL rồi thay thế sạch sẽ.
+- **Bao gồm các bản sửa từ RC1 & RC2**:
+  - **Thư viện Runtime**: cài Microsoft Visual C++ 2015–2022 (x64/x86), DirectX Jun 2010, .NET, OpenAL và bộ cài đi kèm (UEPrereqSetup_x64.exe) vào thẳng Proton Prefix của game.
+  - **Tự động khởi động cùng SteamOS**: hỗ trợ cả Game Mode (systemd --user) và Desktop Mode (XDG autostart).
