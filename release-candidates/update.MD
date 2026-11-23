@@ -1,8 +1,7 @@
-## Bản thử nghiệm RC (v1.7.5-rc1)
+## Bản thử nghiệm RC (v1.7.5-rc2)
 
-- **Thêm mục Thư viện Runtime (Cài VC++ / DirectX / .NET / OpenAL vào Proton Prefix cho Steam Deck & Windows)**:
-  - Sửa lỗi thiếu *Microsoft Visual C++ Runtime* khi mở các game Unreal Engine 4/5 Non-Steam trên Steam Deck (ví dụ Phantom Blade Zero).
-  - Tự động phát hiện trạng thái đã cài / chưa cài trong từng Proton Prefix (compatdata/<appid>/pfx), hỗ trợ 1 chạm **Cài gói khuyến nghị (VC++ 2015–2022 x64/x86 + DirectX Jun 2010)**.
-  - Tự quét các bộ cài đi kèm trong thư mục game (UEPrereqSetup_x64.exe, _CommonRedist, DXSETUP.exe) và hỗ trợ chạy bất kỳ file .exe/.msi nào trực tiếp vào Prefix của game.
-  - Mở nhanh từ Sidebar (**Thư viện Runtime**) hoặc bấm ... trên từng thẻ game → **Cài thư viện Runtime (VC++ / DirectX)...**.
-- **Tự động cài sẵn Visual C++ 2015–2022 (x64) trên SteamOS** khi thêm game Non-Steam mới vào Steam.
+- **Sửa lỗi tự động khởi động cùng SteamOS trên Steam Deck (hỗ trợ cả Game Mode & Desktop Mode)**:
+  - Triển khai đầy đủ set_auto_start cho SteamOS/Linux thay vì chỉ gọi Windows Task Scheduler: tự tạo và kích hoạt systemd --user service (~/.config/systemd/user/bob-game-center.service) cho Game Mode lẫn Desktop Mode và tệp XDG Autostart (~/.config/autostart/bob_game_center.desktop) cho KDE Plasma.
+  - Bộ khởi chạy ob_game_center.sh --autostart tự chờ display socket (gamescope / wayland / XWayland) sẵn sàng khi Steam Deck vừa boot, tránh lỗi không kết nối được màn hình.
+  - Bảo vệ chạy 1 phiên bản khi tự khởi động (--autostart) để không đè lên cửa sổ người dùng đang mở và cấu hình SuccessExitStatus=0 143 SIGTERM để không bị vòng lặp khởi động lại.
+- **Bao gồm tính năng Thư viện Runtime từ RC1**: cài Microsoft Visual C++ 2015–2022 (x64/x86), DirectX Jun 2010, .NET, OpenAL và bộ cài đi kèm (UEPrereqSetup_x64.exe) thẳng vào Proton Prefix của game.
